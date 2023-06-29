@@ -1,0 +1,147 @@
+/*footer*/
+
+.footer {
+	padding-top: 68px;
+	color: white;
+}
+
+.footer,
+.footer-container {
+	border-radius: 64px 64px 0px 0px;
+	background: linear-gradient(180deg, #0176bc 23.24%, #18cce7 100%);
+}
+
+.footer .links .logo-link {
+	width: 150px;
+}
+
+.footer .social-links {
+	margin-top: 45px;
+	width: 135px;
+}
+
+.footer h3 {
+	font-size: 1.2em;
+	text-align: center;
+	font-family: "Jost", serif;
+	font-weight: 700;
+}
+
+.footer ul {
+	padding: 0;
+	list-style: none;
+}
+
+.footer ul li {
+	position: relative;
+}
+
+.footer ul li a {
+	color: white;
+	text-decoration: none;
+	transition: all 0.3s ease;
+	padding: 6px 0;
+}
+
+.footer ul li a:hover {
+	color: #d7e0ff;
+}
+
+.footer .more-info {
+	margin-top: 35px;
+}
+
+.footer .more-info ul,
+.footer .quick-links ul {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.footer .more-info ul li,
+.footer .quick-links ul li {
+	margin: 8px 0;
+}
+
+.bottom-footer {
+	padding: 20px;
+	background: var(--color-blue);
+	color: white;
+}
+
+@media (min-width: 1024px) {
+	.footer .container-footer {
+		display: grid !important;
+		grid-template-columns: 1fr 1fr 1fr;
+		grid-template-rows: 1fr;
+		gap: 0px 0px;
+		grid-auto-flow: row;
+		grid-template-areas: "more-info company-info quick-links";
+		padding: 0 40px;
+		padding-bottom: 92px;
+		max-width: 1024px;
+		margin: auto;
+	}
+
+	.more-info {
+		grid-area: more-info;
+	}
+
+	.quick-links {
+		grid-area: quick-links;
+	}
+
+	.company-info {
+		grid-area: company-info;
+		margin: auto;
+	}
+
+	.footer .more-info ul li {
+		margin: 4px 0;
+	}
+
+	.footer h3 {
+		width: max-content;
+	}
+
+	.footer .links {
+		max-width: 285px;
+	}
+
+	.footer .quick-links {
+		max-width: 158px;
+		margin-left: auto;
+		margin-right: 35px;
+	}
+
+	.footer .quick-links ul {
+		margin-left: 20px;
+		justify-content: flex-start;
+		align-items: flex-start;
+	}
+
+	.footer .quick-links ul li:after {
+		content: "";
+		position: absolute;
+		top: 7px;
+		left: -18px;
+		width: 10px;
+		height: 10px;
+		border-radius: 11px;
+		background: #004066;
+	}
+
+	.more-info ul li a {
+		width: 262px;
+		display: flex;
+		align-items: center;
+	}
+
+	.more-info ul li a img {
+		width: 30px;
+		height: 30px;
+		margin-right: 10px;
+		object-fit: contain;
+	}
+}
