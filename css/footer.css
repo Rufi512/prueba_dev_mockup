@@ -47,6 +47,10 @@
 	color: #d7e0ff;
 }
 
+.footer .container{
+	    max-width: 860px;
+}
+
 .footer .more-info {
 	margin-top: 35px;
 }
@@ -62,6 +66,15 @@
 .footer .more-info ul li,
 .footer .quick-links ul li {
 	margin: 8px 0;
+}
+
+.footer .social-links a img{
+	transition:all 0.3s ease;
+	filter: contrast(1);
+}
+
+.footer .social-links a img:hover{
+	filter: contrast(0.6);
 }
 
 .bottom-footer {
@@ -101,6 +114,10 @@
 		margin: 4px 0;
 	}
 
+	.footer .more-info h3{
+		margin-left:40px;
+	}
+
 	.footer h3 {
 		width: max-content;
 	}
@@ -110,6 +127,7 @@
 	}
 
 	.footer .quick-links {
+		margin-top: 20px;
 		max-width: 158px;
 		margin-left: auto;
 		margin-right: 35px;
