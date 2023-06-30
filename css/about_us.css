@@ -14,18 +14,18 @@ button {
 	cursor: pointer;
 }
 
-.hero-faq {
+.hero-about {
 	position: relative;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	height: 650px;
-	background-image: url("../assets/images/faq-hero.jpg");
+	background-image: url("../assets/images/about-us.jpg");
 	background-size: cover;
-	background-position: center;
+	background-position: top;
 }
 
-.hero-faq::after {
+.hero-about::after {
 	content: "";
 	position: absolute;
 	top: 0;
@@ -37,7 +37,7 @@ button {
 	height: 100%;
 }
 
-.hero-faq h1 {
+.hero-about h1 {
 	font-size: 3em;
 	z-index: 1;
 	font-family: "Jost", serif;
@@ -51,7 +51,8 @@ button {
 /*Content*/
 
 .about-us {
-	padding: 60px 0px;
+	padding: 80px 0;
+	min-height: 600px;
 }
 
 .about-us .content {
@@ -155,6 +156,9 @@ button {
 } 
 
 @media (min-width: 1024px) {
+	.hero-about h1{
+		    font-size: 3.7em;
+	}
 	.about-us .content {
 		display: grid;
 		grid-template-columns: 0.9fr 1fr;

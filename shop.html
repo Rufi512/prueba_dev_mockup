@@ -19,7 +19,7 @@
 		></script>
 		<link rel="stylesheet" href="./css/header.css" />
 		<link rel="stylesheet" href="./css/footer.css" />
-		<link rel="stylesheet" href="./css/about_us.css" />
+		<link rel="stylesheet" href="./css/shop.css" />
 	</head>
 	<body>
 		<main>
@@ -63,12 +63,18 @@
 						</a>
 
 						<ul>
-							<li class="nav-item"><a href="./about_us.html">About us</a></li>
+							<li class="nav-item">
+								<a href="/about_us.html">About us</a>
+							</li>
 							<li class="nav-item">
 								<a href="./shop.html">Shop by category</a>
 							</li>
-							<li class="nav-item"><a href="./faq.html">Faq's</a></li>
-							<li class="nav-item"><a href="./contact_us.html">Contact us</a></li>
+							<li class="nav-item">
+								<a href="./faq.html">Faq's</a>
+							</li>
+							<li class="nav-item">
+								<a href="./contact_us.html">Contact us</a>
+							</li>
 						</ul>
 					</nav>
 
@@ -119,81 +125,167 @@
 				</div>
 			</header>
 
-			<!-- Hero Content -->
-			<section class="hero-about">
-				<h1 class="col-12 text-center">About Us</h1>
+			<!--Hero section-->
+
+			<section class="hero-shop">
+				<h1 class="col-12 text-center">Shop by category</h1>
 			</section>
 
-			<section class="about-us d-flex">
-				<div class="content">
-					<div class="about-content">
-						<h2>The Company</h2>
-						<p>
-							A few years ago, a young entrepreneur named Ana
-							realized the lack of quality natural skin care
-							products on the market. Although there were many
-							products on the market, most contained synthetic
-							ingredients that were not good for the skin. Ana
-							decided to do something about it and founded her own
-							company. <br /> <br/>
-							The company started as a small online business,
-							selling natural creams and masks that Ana had
-							formulated and tested herself. Over time, the
-							company grew and Ana realized that she needed a team
-							of experts to help her develop high-quality products
-							that were effective and safe for the skin.<span id="dots">..</span>
-							<span id="more"
-								><br />
-								<br />
+			<!-- Products section-->
 
-								Ana surrounded herself with a team of experts in
-								dermatology, chemistry, and beauty, all
-								passionate about creating high-quality natural
-								products. Together, Ana and her team worked hard
-								to develop innovative formulas that used
-								natural, non-toxic skincare ingredients. Soon,
-								her company became a leader in the natural skin
-								care market.<br />
-								<br />
-								Today, Ana and her team continue to work hard to
-								develop new innovative and effective natural
-								skin care products. The company has become a
-								market leader in natural skin care products and
-								continues to be recognized for its commitment to
-								quality and safety.</span
-							>
-						</p>
-
-						<button
-							type="button"
-							class="button-link m-auto"
-							id="myBtn"
-							onclick="showText()"
+			<section class="product-section col-12">
+				<h2 class="text-center p-3">The Best Products For You</h2>
+				<div
+					class="container container-products d-flex p-2 justify-content-around flex-wrap"
+				>
+					<div class="product d-flex flex-column">
+						<div class="product-body d-flex flex-column">
+							<img
+								class="image"
+								src="./assets/images/product_2.jpg"
+								alt="producto-2"
+							/>
+							<div class="cart-add">
+								<span class="price">25$</span>
+								<a href="#" class="circle-link"
+									><img
+										width="20"
+										height="20"
+										src="./assets/icons/cart.png"
+										alt="cart"
+								/></a>
+							</div>
+						</div>
+						<h3
+							class="d-flex align-items-center justify-content-center"
 						>
-							Read more
-						</button>
+							Revitalift
+						</h3>
 					</div>
-					<div class="container-images">
-						<img
-							class="img img-1"
-							src="./assets/images/about-1.jpg"
-							alt="about-1"
-						/>
-						<img
-							class="img img-2"
-							src="./assets/images/about-2.jpg"
-							alt="about-2"
-						/>
-						<img
-							class="img img-3"
-							src="./assets/images/about-3.jpg"
-							alt="about-3"
-						/>
-						<img
-							class="img img-4"
-							src="./assets/images/about-4.jpg"
-							alt="about-4"
-						/>
+
+					<div class="product d-flex flex-column">
+						<div class="product-body d-flex flex-column">
+							<img
+								class="image"
+								src="./assets/images/product_3.jpg"
+								alt="producto-2"
+							/>
+							<div class="cart-add">
+								<span class="price">25$</span>
+								<a href="#" class="circle-link"
+									><img
+										width="20"
+										height="20"
+										src="./assets/icons/cart.png"
+										alt="cart"
+								/></a>
+							</div>
+						</div>
+						<h3
+							class="d-flex align-items-center justify-content-center"
+						>
+							Pond’s
+						</h3>
+					</div>
+
+					<div class="product d-flex flex-column">
+						<div class="product-body d-flex flex-column">
+							<img
+								class="image"
+								src="./assets/images/product_1.jpg"
+								alt="producto-1"
+							/>
+							<div class="cart-add">
+								<span class="price">25$</span>
+								<a href="#" class="circle-link"
+									><img
+										width="20"
+										height="20"
+										src="./assets/icons/cart.png"
+										alt="cart"
+								/></a>
+							</div>
+						</div>
+						<h3
+							class="d-flex align-items-center justify-content-center"
+						>
+							Caudalie
+						</h3>
+					</div>
+
+					<div class="product d-flex flex-column">
+						<div class="product-body d-flex flex-column">
+							<img
+								class="image"
+								src="./assets/images/product_2.jpg"
+								alt="producto-2"
+							/>
+							<div class="cart-add">
+								<span class="price">25$</span>
+								<a href="#" class="circle-link"
+									><img
+										width="20"
+										height="20"
+										src="./assets/icons/cart.png"
+										alt="cart"
+								/></a>
+							</div>
+						</div>
+						<h3
+							class="d-flex align-items-center justify-content-center"
+						>
+							Revitalift
+						</h3>
+					</div>
+
+					<div class="product d-flex flex-column">
+						<div class="product-body d-flex flex-column">
+							<img
+								class="image"
+								src="./assets/images/product_3.jpg"
+								alt="producto-2"
+							/>
+							<div class="cart-add">
+								<span class="price">25$</span>
+								<a href="#" class="circle-link"
+									><img
+										width="20"
+										height="20"
+										src="./assets/icons/cart.png"
+										alt="cart"
+								/></a>
+							</div>
+						</div>
+						<h3
+							class="d-flex align-items-center justify-content-center"
+						>
+							Pond’s
+						</h3>
+					</div>
+
+					<div class="product d-flex flex-column">
+						<div class="product-body d-flex flex-column">
+							<img
+								class="image"
+								src="./assets/images/product_1.jpg"
+								alt="producto-1"
+							/>
+							<div class="cart-add">
+								<span class="price">25$</span>
+								<a href="#" class="circle-link"
+									><img
+										width="20"
+										height="20"
+										src="./assets/icons/cart.png"
+										alt="cart"
+								/></a>
+							</div>
+						</div>
+						<h3
+							class="d-flex align-items-center justify-content-center"
+						>
+							Caudalie
+						</h3>
 					</div>
 				</div>
 			</section>
@@ -291,16 +383,13 @@
 							Copyright © 2022 All rights reserved | This Website
 							Was Designed And Developed by
 						</p>
-						<img
-							src="./assets/images/logo-js.png"
-							alt="logo"
-						/>
+						<img src="./assets/images/logo-js.png" alt="logo" />
 					</div>
 				</div>
 			</footer>
 
 			<script src="./js/script.js"></script>
-			<script src="./js/about_us.js"></script>
+			<script src="./js/collapse.js"></script>
 		</main>
 	</body>
 </html>
