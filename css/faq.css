@@ -1,0 +1,117 @@
+:root {
+	--color-blue: #016dad;
+	--color-orange: #ff7a59;
+}
+body {
+	margin: 0;
+	padding: 0;
+	font-family: "Andada Pro", serif !important;
+}
+
+button {
+	outline: 0 !important;
+	border: none;
+	cursor: pointer;
+}
+
+h3 {
+	margin: 0;
+}
+
+.title {
+	color: var(--color-blue);
+	font-size: 2.8em;
+	text-align: center;
+	font-family: "Jost", serif;
+	font-weight: 700;
+	padding: 0 20px;
+	margin: 15px 0;
+}
+
+.hero-faq {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 650px;
+	background-image: url("../assets/images/faq-hero.jpg");
+	background-size: cover;
+	background-position: center;
+}
+
+.hero-faq::after {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: rgba(255, 255, 255, 0.61);
+	width: 100%;
+	height: 100%;
+}
+
+.hero-faq h1 {
+	font-size: 3em;
+	z-index: 1;
+	font-family: "Jost", serif;
+	color: var(--color-blue);
+}
+
+.container-faq {
+	margin-top: 30px;
+}
+
+.container-faq h3 {
+	font-size: 1.4em;
+}
+
+.accordion-container {
+	padding: 0 20px;
+	max-width: 880px;
+	margin: auto;
+	margin-top: 50px;
+	margin-bottom: 90px;
+}
+
+.accordion-container .card {
+	margin: 30px 0;
+}
+
+.accordion-container .card .card-header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	background: var(--color-blue);
+}
+
+.accordion-container .card .card-header h3 {
+	width: max-content;
+	font-weight: 700;
+	color: white;
+	font-size: 1em;
+	text-align: left;
+	margin-right: 20px;
+}
+
+.accordion-container .card .card-header img {
+	transform-origin: left center;
+	transform: rotate(30deg);
+	transition: all 0.3s ease;
+}
+
+.faq-quote {
+	max-height: 0px;
+	overflow: hidden;
+	transition: all 0.3s ease;
+}
+
+@media(min-width:1024px){
+	.accordion-container .card .card-header h3 {
+		font-size:1.3em;
+	}
+
+	.accordion-container .card .card-body{
+		font-size:1.2em;
+	} 
+}

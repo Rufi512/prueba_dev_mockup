@@ -17,6 +17,16 @@
 	font-style: normal;
 }
 
+a:hover{
+	text-decoration:none;
+}
+
+ul {
+	padding: 0;
+	list-style: none;
+}
+
+
 /*Header section*/
 
 /*Navigation fixed*/
@@ -182,7 +192,7 @@ header .navigation .xmark {
 		width: max-content;
 	}
 
-	header .logo div {
+	header .logo a {
 		margin-left: 75px;
 	}
 
