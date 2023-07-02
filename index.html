@@ -1,722 +1,611 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Document</title>
-		<link rel="stylesheet" href="./css/owl.carousel.min.css" />
-		<link rel="stylesheet" href="./css/owl.theme.default.min.css" />
-		<link
-			rel="stylesheet"
-			href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css"
-			integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
-			crossorigin="anonymous"
-		/>
-		<script
-			src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js"
-			integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
-			crossorigin="anonymous"
-		></script>
-		<link rel="stylesheet" href="./css/header.css" />
-		<link rel="stylesheet" href="./css/style.css" />
-		<link rel="stylesheet" href="./css/footer.css" />
-	</head>
-	<body>
-		<main>
-			<header class="header">
-				<div class="col-12 content-header">
-					<div class="logo d-flex align-items-center">
-						<a href="./index.html"
-							class="d-flex align-items-center container-fluid p-0"
-						>
-							<img src="./assets/images/LOGO.png" alt="Logo" />
-							<h1>Skin Care</h1>
-						</a>
-						<label for="show-header" class="bars-button"
-							><svg
-								xmlns="http://www.w3.org/2000/svg"
-								viewBox="0 0 448 512"
-							>
-								<path
-									d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"
-								/></svg
-						></label>
-					</div>
-					<!--Navigation-->
-					<input type="checkbox" id="show-header" hidden />
-					<nav class="navigation nav">
-						<label for="show-header" class="xmark"
-							><svg
-								xmlns="http://www.w3.org/2000/svg"
-								viewBox="0 0 384 512"
-							>
-								<path
-									d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"
-								/></svg
-						></label>
-						<a href="./index.html" class="logo-link">
-							<img
-								src="./assets/images/logo-blanco.png"
-								alt="logo"
-							/>
-						</a>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Skin Care</title>
+    <link rel="stylesheet" href="./css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="./css/owl.theme.default.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css"
+      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js"
+      integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./css/header.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/footer.css" />
+  </head>
+  <body>
+    <main>
+      <header class="header">
+        <div class="col-12 content-header">
+          <div class="logo d-flex align-items-center">
+            <a
+              href="./index.html"
+              class="d-flex align-items-center container-fluid p-0"
+            >
+              <img src="./assets/images/LOGO.png" alt="Logo" />
+              <h1>Skin Care</h1>
+            </a>
+            <label for="show-header" class="bars-button"
+              ><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                <path
+                  d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"
+                /></svg
+            ></label>
+          </div>
+          <!--Navigation-->
+          <input type="checkbox" id="show-header" hidden />
+          <nav class="navigation nav">
+            <label for="show-header" class="xmark"
+              ><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                <path
+                  d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"
+                /></svg
+            ></label>
+            <a href="./index.html" class="logo-link">
+              <img src="./assets/images/logo-blanco.png" alt="logo" />
+            </a>
 
-						<ul>
-							<li class="nav-item"><a href="./about_us.html">About us</a></li>
-							<li class="nav-item">
-								<a href="./shop.html">Shop by category</a>
-							</li>
-							<li class="nav-item"><a href="./faq.html">Faq's</a></li>
-							<li class="nav-item"><a href="./contact_us.html">Contact us</a></li>
-						</ul>
-					</nav>
+            <ul>
+              <li class="nav-item"><a href="./about_us.html">About us</a></li>
+              <li class="nav-item">
+                <a href="./shop.html">Shop by category</a>
+              </li>
+              <li class="nav-item"><a href="./faq.html">Faq's</a></li>
+              <li class="nav-item">
+                <a href="./contact_us.html">Contact us</a>
+              </li>
+            </ul>
+          </nav>
 
-					<!--Social links-->
-					<nav class="nav-social">
-						<ul
-							class="social-links nav d-flex justify-content-between"
-						>
-							<div class="d-flex social">
-								<li class="nav-item">
-									<a href="#"
-										><img
-											src="./assets/icons/mail.png"
-											alt="mail"
-									/></a>
-								</li>
-								<li class="nav-item">
-									<a href="#"
-										><img
-											src="./assets/icons/map.png"
-											alt="map"
-									/></a>
-								</li>
-								<li class="nav-item">
-									<a href="#"
-										><img
-											src="./assets/icons/phone.png"
-											alt="phone"
-									/></a>
-								</li>
-							</div>
-							<div class="items">
-								<li class="nav-item">
-									<a href="#"
-										><img
-											src="./assets/icons/search.png"
-											alt="search"
-									/></a>
-									<a href="#"
-										><img
-											src="./assets/icons/cart.png"
-											alt="cart"
-									/></a>
-								</li>
-							</div>
-						</ul>
-					</nav>
-				</div>
-			</header>
+          <!--Social links-->
+          <nav class="nav-social">
+            <ul class="social-links nav d-flex justify-content-between">
+              <div class="d-flex social">
+                <li class="nav-item">
+                  <a href="#"
+                    ><img src="./assets/icons/mail.png" alt="mail"
+                  /></a>
+                </li>
+                <li class="nav-item">
+                  <a href="#"><img src="./assets/icons/map.png" alt="map" /></a>
+                </li>
+                <li class="nav-item">
+                  <a href="#"
+                    ><img src="./assets/icons/phone.png" alt="phone"
+                  /></a>
+                </li>
+              </div>
+              <div class="items">
+                <li class="nav-item">
+                  <a href="#"
+                    ><img src="./assets/icons/search.png" alt="search"
+                  /></a>
+                  <a href="#"
+                    ><img src="./assets/icons/cart.png" alt="cart"
+                  /></a>
+                </li>
+              </div>
+            </ul>
+          </nav>
+        </div>
+      </header>
 
-			<!-- section Hero -->
-			<section
-				class="container-hero d-flex align-content-center justify-content-between"
-			>
-				<video
-					class="position-absolute m-0"
-					autoplay="true"
-					loop="true"
-					muted="muted"
-					id="hero-video"
-				>
-					<source
-						src="./assets/videos/hero-video.mp4"
-						type="video/mp4"
-					/>
-				</video>
+      <!-- section Hero -->
+      <section
+        class="container-hero d-flex align-content-center justify-content-between"
+      >
+        <video
+          class="position-absolute m-0"
+          autoplay="true"
+          loop="true"
+          muted="muted"
+          id="hero-video"
+        >
+          <source src="./assets/videos/hero-video.mp4" type="video/mp4" />
+        </video>
 
-				<img
-					class="obj-dec"
-					src="./assets/icons/adorno.png"
-					alt="adorno"
-				/>
-				<img
-					class="obj-dec-2"
-					src="./assets/icons/adorno-2.png"
-					alt="adorno-2"
-				/>
+        <img class="obj-dec" src="./assets/icons/adorno.png" alt="adorno" />
+        <img
+          class="obj-dec-2"
+          src="./assets/icons/adorno-2.png"
+          alt="adorno-2"
+        />
 
-				<div class="container-content">
-					<h2 class="title">Become The Best Version Of Yourself</h2>
-					<a
-						class="d-flex justify-content-center button-link"
-						href="#"
-						>Get Started</a
-					>
-				</div>
-			</section>
+        <div class="container-content">
+          <h2 class="title">Become The Best Version Of Yourself</h2>
+          <a
+            class="d-flex justify-content-center button-link"
+            href="./shop.html"
+            >Get Started</a
+          >
+        </div>
+      </section>
 
-			<!-- Container seller -->
-			<section class="container-sellers">
-				<img class="obj-dec" src="./assets/icons/bar.png" alt="bar" />
-				<img
-					class="obj-dec-2"
-					src="./assets/icons/adorno-7.png"
-					alt="adorno-7"
-				/>
-				<img
-					class="obj-dec-3"
-					src="./assets/icons/adorno-8.png"
-					alt="adorno-8"
-				/>
-				<img
-					class="obj-dec-4"
-					src="./assets/icons/ellipse-white.png"
-					alt="ellipse-white"
-				/>
-				<img
-					class="obj-dec-5"
-					src="./assets/icons/ellipse-white-2.png"
-					alt="ellipse-white-2"
-				/>
-				<div class="container-content">
-					<h2 class="title">Best Sellers</h2>
+      <!-- Container seller -->
+      <section class="container-sellers">
+        <img class="obj-dec" src="./assets/icons/bar.png" alt="bar" />
+        <img
+          class="obj-dec-2"
+          src="./assets/icons/adorno-7.png"
+          alt="adorno-7"
+        />
+        <img
+          class="obj-dec-3"
+          src="./assets/icons/adorno-8.png"
+          alt="adorno-8"
+        />
+        <img
+          class="obj-dec-4"
+          src="./assets/icons/ellipse-white.png"
+          alt="ellipse-white"
+        />
+        <img
+          class="obj-dec-5"
+          src="./assets/icons/ellipse-white-2.png"
+          alt="ellipse-white-2"
+        />
+        <div class="container-content">
+          <h2 class="title">Best Sellers</h2>
 
-					<div
-						class="container-products d-flex justify-content-center align-items-center"
-					>
-						<div class="owl-carousel">
-							<div class="product d-flex flex-column">
-								<div class="product-body d-flex flex-column">
-									<img
-										class="image"
-										src="./assets/images/product_1.jpg"
-										alt="producto-1"
-									/>
-									<div class="cart-add">
-										<span class="price">25$</span>
-										<a href="#" class="circle-link"
-											><img
-												width="20"
-												height="20"
-												src="./assets/icons/cart.png"
-												alt="cart"
-										/></a>
-									</div>
-								</div>
-								<h3
-									class="d-flex align-items-center justify-content-center"
-								>
-									Caudalie
-								</h3>
-							</div>
-							<div class="product d-flex flex-column">
-								<div class="product-body d-flex flex-column">
-									<img
-										class="image"
-										src="./assets/images/product_2.jpg"
-										alt="producto-2"
-									/>
-									<div class="cart-add">
-										<span class="price">25$</span>
-										<a href="#" class="circle-link"
-											><img
-												width="20"
-												height="20"
-												src="./assets/icons/cart.png"
-												alt="cart"
-										/></a>
-									</div>
-								</div>
-								<h3
-									class="d-flex align-items-center justify-content-center"
-								>
-									Revitalift
-								</h3>
-							</div>
+          <div
+            class="container-products d-flex justify-content-center align-items-center"
+          >
+            <div class="owl-carousel carousel-products">
+              <div class="product d-flex flex-column">
+                <div class="product-body d-flex flex-column">
+                  <img
+                    class="image"
+                    src="./assets/images/product_1.jpg"
+                    alt="producto-1"
+                  />
+                  <div class="cart-add">
+                    <span class="price">25$</span>
+                    <a href="#" class="circle-link"
+                      ><img
+                        width="20"
+                        height="20"
+                        src="./assets/icons/cart.png"
+                        alt="cart"
+                    /></a>
+                  </div>
+                </div>
+                <h3 class="d-flex align-items-center justify-content-center">
+                  Caudalie
+                </h3>
+              </div>
+              <div class="product d-flex flex-column">
+                <div class="product-body d-flex flex-column">
+                  <img
+                    class="image"
+                    src="./assets/images/product_2.jpg"
+                    alt="producto-2"
+                  />
+                  <div class="cart-add">
+                    <span class="price">25$</span>
+                    <a href="#" class="circle-link"
+                      ><img
+                        width="20"
+                        height="20"
+                        src="./assets/icons/cart.png"
+                        alt="cart"
+                    /></a>
+                  </div>
+                </div>
+                <h3 class="d-flex align-items-center justify-content-center">
+                  Revitalift
+                </h3>
+              </div>
 
-							<div class="product d-flex flex-column">
-								<div class="product-body d-flex flex-column">
-									<img
-										class="image"
-										src="./assets/images/product_3.jpg"
-										alt="producto-2"
-									/>
-									<div class="cart-add">
-										<span class="price">25$</span>
-										<a href="#" class="circle-link"
-											><img
-												width="20"
-												height="20"
-												src="./assets/icons/cart.png"
-												alt="cart"
-										/></a>
-									</div>
-								</div>
-								<h3
-									class="d-flex align-items-center justify-content-center"
-								>
-									Pond’s
-								</h3>
-							</div>
-						</div>
-					</div>
+              <div class="product d-flex flex-column">
+                <div class="product-body d-flex flex-column">
+                  <img
+                    class="image"
+                    src="./assets/images/product_3.jpg"
+                    alt="producto-2"
+                  />
+                  <div class="cart-add">
+                    <span class="price">25$</span>
+                    <a href="#" class="circle-link"
+                      ><img
+                        width="20"
+                        height="20"
+                        src="./assets/icons/cart.png"
+                        alt="cart"
+                    /></a>
+                  </div>
+                </div>
+                <h3 class="d-flex align-items-center justify-content-center">
+                  Pond’s
+                </h3>
+              </div>
+            </div>
+          </div>
 
-					<a
-						class="d-flex justify-content-center button-link"
-						href="#"
-						>View more</a
-					>
-				</div>
-			</section>
+          <a
+            class="d-flex justify-content-center button-link"
+            href="./shop.html"
+            >View more</a
+          >
+        </div>
+      </section>
 
-			<!-- About us-->
+      <!-- About us-->
 
-			<section class="container-about-us">
-				<div class="container-content">
-					<img
-						class="logo-bg"
-						src="./assets/images/logo-background.png"
-						alt="logo-bg"
-					/>
-					<div class="images-about-us">
-						<div class="image">
-							<img
-								src="./assets/images/about-1.jpg"
-								alt="about-1"
-							/>
-						</div>
-						<div class="image">
-							<img
-								src="./assets/images/about-3.jpg"
-								alt="about-3"
-							/>
-						</div>
-					</div>
-					<div class="content">
-						<h2 class="title bg-circle">About us</h2>
-						<p>
-							We are a company that transforms creams and masks
-							based on natural products for the care and beauty of
-							our clients' skin. This product is available for men
-							and women, offering the best quality, generating
-							confidence in our clients through innovative
-							methods. <br />
-							We have a multidisciplinary work team dedicated to
-							developing the best natural products to meet the
-							needs of our clients in terms of facial care and
-							beauty.<br />
-							<br />
-							Thanks to our commitment and knowledge, we are
-							uniquely positioned to be the most trusted business
-							partner. We exceed the expectations of our customers
-							and shareholders by setting the standard in
-							providing the most reliable and innovative product
-							identification solutions anywhere in the world.
-						</p>
-						<a href="#" class="button-link btn-blue">Read more</a>
-					</div>
-				</div>
-			</section>
+      <section class="container-about-us">
+        <div class="container-content">
+          <img
+            class="logo-bg"
+            src="./assets/images/logo-background.png"
+            alt="logo-bg"
+          />
+          <div class="images-about-us">
+            <div class="image">
+              <img src="./assets/images/about-1.jpg" alt="about-1" />
+            </div>
+            <div class="image">
+              <img src="./assets/images/about-3.jpg" alt="about-3" />
+            </div>
+          </div>
+          <div class="content">
+            <h2 class="title bg-circle">About us</h2>
+            <p>
+              We are a company that transforms creams and masks based on natural
+              products for the care and beauty of our clients' skin. This
+              product is available for men and women, offering the best quality,
+              generating confidence in our clients through innovative methods.
+              <br />
+              We have a multidisciplinary work team dedicated to developing the
+              best natural products to meet the needs of our clients in terms of
+              facial care and beauty.<br />
+              <br />
+              Thanks to our commitment and knowledge, we are uniquely positioned
+              to be the most trusted business partner. We exceed the
+              expectations of our customers and shareholders by setting the
+              standard in providing the most reliable and innovative product
+              identification solutions anywhere in the world.
+            </p>
+            <a href="./about_us.html" class="button-link btn-blue">Read more</a>
+          </div>
+        </div>
+      </section>
 
-			<!-- container shop-->
+      <!-- container shop-->
 
-			<section class="container-shop">
-				<img
-					class="obj-dec"
-					src="./assets/icons/adorno-3.png"
-					alt="adorno-3"
-				/>
-				<img
-					class="obj-dec-2"
-					src="./assets/icons/adorno-4.png"
-					alt="adorno-4"
-				/>
-				<img class="obj-dec-3" src="./assets/icons/bar.png" alt="bar" />
-				<div class="container-content">
-					<h2 class="title">Shop by Category</h2>
-					<div class="container-images">
-						<div class="image text-left img-1">
-							<img
-								src="./assets/images/categoria-1.jpg"
-								alt="categoria-1"
-							/>
-							<h3>Scrubs</h3>
-						</div>
+      <section class="container-shop">
+        <img class="obj-dec" src="./assets/icons/adorno-3.png" alt="adorno-3" />
+        <img
+          class="obj-dec-2"
+          src="./assets/icons/adorno-4.png"
+          alt="adorno-4"
+        />
+        <img class="obj-dec-3" src="./assets/icons/bar.png" alt="bar" />
+        <div class="container-content">
+          <h2 class="title">Shop by Category</h2>
+          <div class="container-images">
+            <a href="./shop.html#Scrubs" class="image text-left img-1">
+              <img src="./assets/images/categoria-1.jpg" alt="categoria-1" />
+              <h3>Scrubs</h3>
+            </a>
 
-						<div class="image text-center img-2">
-							<img
-								src="./assets/images/categoria-2.jpg"
-								alt="categoria-2"
-							/>
-							<h3>Stain resistant</h3>
-						</div>
+            <a href="./shop.html#Stain-resistant" class="image text-center img-2">
+              <img src="./assets/images/categoria-2.jpg" alt="categoria-2" />
+              <h3>Stain resistant</h3>
+            </a>
 
-						<div class="image text-right img-3">
-							<img
-								src="./assets/images/categoria-3.jpg"
-								alt="categoria-3"
-							/>
-							<h3>Mattifying</h3>
-						</div>
+            <a href="./shop.html#Mattifying" class="image text-right img-3">
+              <img src="./assets/images/categoria-3.jpg" alt="categoria-3" />
+              <h3>Mattifying</h3>
+            </a>
 
-						<div class="image text-left img-revert-left img-4">
-							<img
-								src="./assets/images/categoria-4.jpg"
-								alt="categoria-4"
-							/>
-							<h3>Moisturizers</h3>
-						</div>
+            <a href="./shop.html#Moisturizers" class="image text-left img-revert-left img-4">
+              <img src="./assets/images/categoria-4.jpg" alt="categoria-4" />
+              <h3>Moisturizers</h3>
+            </a>
 
-						<div class="image text-center img-5">
-							<img
-								src="./assets/images/categoria-5.jpg"
-								alt="categoria-5"
-							/>
-							<h3>Tonics</h3>
-						</div>
+            <a href="./shop.html#Tonics" class="image text-center img-5">
+              <img src="./assets/images/categoria-5.jpg" alt="categoria-5" />
+              <h3>Tonics</h3>
+            </a>
 
-						<div class="image text-right img-revert-right img-6">
-							<img
-								src="./assets/images/categoria-6.jpg"
-								alt="categoria-6"
-							/>
-							<h3>Anti wrinkle</h3>
-						</div>
-					</div>
+            <a href="./shop.html#Anti-wrinkle" class="image text-right img-revert-right img-6">
+              <img src="./assets/images/categoria-6.jpg" alt="categoria-6" />
+              <h3>Anti wrinkle</h3>
+            </a>
+          </div>
 
-					<a href="#" class="button-link">Read More</a>
-				</div>
-			</section>
+          <a href="./shop.html" class="button-link">Read More</a>
+        </div>
+      </section>
 
-			<!-- container benefits-->
+      <!-- container benefits-->
 
-			<section class="container-benefits">
-				<img
-					class="obj-dec"
-					src="./assets/icons/ellipse-2.png"
-					alt="ellipse-2"
-				/>
-				<div class="container-content">
-					<div class="image">
-						<img src="./assets/images/about-3.jpg" alt="about-3" />
-						<h3>The best products for you</h3>
-						<img
-							src="./assets/icons/rectangle.png"
-							alt="rectangle"
-						/>
-					</div>
-					<div class="content p-0">
-						<h2 class="title bg-circle">Benefits</h2>
-						<p>
-							The creams will help you maintain the moisture of
-							your skin, and will reinforce its barrier function.
-							And just as you apply a moisturizer to your face,
-							you should apply it to your body, and not just in
-							summer.<br /><br />
-							The best time to apply them is after a shower. And
-							even if your gel is moisturizing, you should also
-							use a lotion or body milk. Take the equivalent of a
-							walnut for each part of the body (abdomen, arms,
-							thighs, calves...) and take the opportunity to give
-							yourself a circular massage from bottom to top.
-						</p>
-					</div>
-					<div
-						class="container-list d-flex flex-wrap justify-content-around"
-					>
-						<div
-							class="benefits d-flex flex-column align-items-center justify-content-center"
-						>
-							<div
-								class="icon d-flex flex-column align-items-center justify-content-center"
-							>
-								<img
-									src="./assets/icons/icon-3.png"
-									alt="benefits-1"
-								/>
-							</div>
-							<h3 class="mt-2">Gool Deal</h3>
-						</div>
-						<div
-							class="benefits d-flex flex-column align-items-center justify-content-center"
-						>
-							<div
-								class="icon d-flex flex-column align-items-center justify-content-center"
-							>
-								<img
-									src="./assets/icons/icon-2.png"
-									alt="benefits-2"
-								/>
-							</div>
-							<h3 class="mt-2">Support</h3>
-						</div>
-						<div
-							class="benefits d-flex flex-column align-items-center justify-content-center"
-						>
-							<div
-								class="icon d-flex flex-column align-items-center justify-content-center"
-							>
-								<img
-									src="./assets/icons/icon-1.png"
-									alt="benefits-3"
-								/>
-							</div>
-							<h3 class="mt-2">Quality</h3>
-						</div>
-					</div>
-				</div>
-			</section>
+      <section class="container-benefits">
+        <img
+          class="obj-dec"
+          src="./assets/icons/ellipse-2.png"
+          alt="ellipse-2"
+        />
+        <div class="container-content">
+          <div class="image">
+            <img src="./assets/images/about-3.jpg" alt="about-3" />
+            <h3>The best products for you</h3>
+            <img src="./assets/icons/rectangle.png" alt="rectangle" />
+          </div>
+          <div class="content p-0">
+            <h2 class="title bg-circle">Benefits</h2>
+            <p>
+              The creams will help you maintain the moisture of your skin, and
+              will reinforce its barrier function. And just as you apply a
+              moisturizer to your face, you should apply it to your body, and
+              not just in summer.<br /><br />
+              The best time to apply them is after a shower. And even if your
+              gel is moisturizing, you should also use a lotion or body milk.
+              Take the equivalent of a walnut for each part of the body
+              (abdomen, arms, thighs, calves...) and take the opportunity to
+              give yourself a circular massage from bottom to top.
+            </p>
+          </div>
+          <div class="container-list d-flex flex-wrap justify-content-around">
+            <div
+              class="benefits d-flex flex-column align-items-center justify-content-center"
+            >
+              <div
+                class="icon d-flex flex-column align-items-center justify-content-center"
+              >
+                <img src="./assets/icons/icon-3.png" alt="benefits-1" />
+              </div>
+              <h3 class="mt-2">Gool Deal</h3>
+            </div>
+            <div
+              class="benefits d-flex flex-column align-items-center justify-content-center"
+            >
+              <div
+                class="icon d-flex flex-column align-items-center justify-content-center"
+              >
+                <img src="./assets/icons/icon-2.png" alt="benefits-2" />
+              </div>
+              <h3 class="mt-2">Support</h3>
+            </div>
+            <div
+              class="benefits d-flex flex-column align-items-center justify-content-center"
+            >
+              <div
+                class="icon d-flex flex-column align-items-center justify-content-center"
+              >
+                <img src="./assets/icons/icon-1.png" alt="benefits-3" />
+              </div>
+              <h3 class="mt-2">Quality</h3>
+            </div>
+          </div>
+        </div>
+      </section>
 
-			<!-- Container customers -->
-			<section class="container-customers">
-				<img
-					class="obj-dec"
-					src="./assets/icons/adorno.png"
-					alt="adorno"
-				/>
-				<div class="container-content">
-					<h2 class="title">What do our customers say</h2>
-					<img
-						class="obj-dec-2"
-						src="./assets/icons/bar-2.png"
-						alt="bar-2"
-					/>
+      <!-- Container customers -->
+      <section class="container-customers">
+        <img class="obj-dec" src="./assets/icons/adorno.png" alt="adorno" />
+        <div class="container-content">
+          <h2 class="title">What do our customers say</h2>
+          <img class="obj-dec-2" src="./assets/icons/bar-2.png" alt="bar-2" />
 
-					<div class="container-list owl-carousel carousel-customer">
-						<div
-							class="customer d-flex flex-column justify-content align-items-center"
-						>
-							<h3 class="customer-name">Jhon Smith</h3>
-							<div class="img-container">
-								<img
-									class="img-customer"
-									src="./assets/images/person_3.png"
-									alt="person_3"
-								/>
-								<div class="container-buttons">
-									<button onclick="leftPage()">
-										<img
-											src="./assets/icons/arrow-left.png"
-											alt="arrow-left"
-										/>
-									</button>
-									<button onclick="rightPage()">
-										<img
-											src="./assets/icons/arrow-right.png"
-											alt="arrow-right"
-										/>
-									</button>
-								</div>
-							</div>
-							<p class="customer-desc">
-								The creams are fantastic and wonderful, they
-								have made me feel younger, and have given my
-								skin incredible softness, 100% recommended their
-								products
-							</p>
-						</div>
-						<div
-							class="customer d-flex flex-column justify-content align-items-center"
-						>
-							<h3 class="customer-name">Emily</h3>
-							<div class="img-container">
-								<img
-									class="img-customer"
-									src="./assets/images/person_3.png"
-									alt="person_3"
-								/>
-								<div class="container-buttons">
-									<button onclick="leftPage()">
-										<img
-											src="./assets/icons/arrow-left.png"
-											alt="arrow-left"
-										/>
-									</button>
-									<button onclick="rightPage()">
-										<img
-											src="./assets/icons/arrow-right.png"
-											alt="arrow-right"
-										/>
-									</button>
-								</div>
-							</div>
-							<p class="customer-desc">
-								I have tried countless skin care products in the
-								past, but this cream truly stands out. It's
-								lightweight, non-greasy, and leaves my skin
-								feeling incredibly soft and hydrated.
-							</p>
-						</div>
-						<div
-							class="customer d-flex flex-column justify-content align-items-center"
-						>
-							<h3 class="customer-name">Samantha</h3>
-							<div class="img-container">
-								<img
-									class="img-customer"
-									src="./assets/images/person_3.png"
-									alt="person_3"
-								/>
-								<div class="container-buttons">
-									<button onclick="leftPage()">
-										<img
-											src="./assets/icons/arrow-left.png"
-											alt="arrow-left"
-										/>
-									</button>
-									<button onclick="rightPage()">
-										<img
-											src="./assets/icons/arrow-right.png"
-											alt="arrow-right"
-										/>
-									</button>
-								</div>
-							</div>
-							<p class="customer-desc">
-								I cannot recommend this skin care cream enough!
-								It has done wonders for my skin, reducing the
-								appearance of fine lines and improving its
-								overall texture.
-							</p>
-						</div>
-					</div>
-					<a
-						class="customer-link button-link"
-						href="#"
-						class="button-link"
-						>Read more</a
-					>
-				</div>
-			</section>
-			<!-- products form-->
+          <div class="container-list owl-carousel carousel-customer">
+            <div
+              class="customer d-flex flex-column justify-content align-items-center"
+            >
+              <h3 class="customer-name">Jhon Smith</h3>
+              <div class="img-container">
+                <img
+                  class="img-customer"
+                  src="./assets/images/person_3.png"
+                  alt="person_3"
+                />
+                <div class="container-buttons">
+                  <button onclick="leftPage()">
+                    <img src="./assets/icons/arrow-left.png" alt="arrow-left" />
+                  </button>
+                  <button onclick="rightPage()">
+                    <img
+                      src="./assets/icons/arrow-right.png"
+                      alt="arrow-right"
+                    />
+                  </button>
+                </div>
+              </div>
+              <p class="customer-desc">
+                The creams are fantastic and wonderful, they have made me feel
+                younger, and have given my skin incredible softness, 100%
+                recommended their products
+              </p>
+            </div>
+            <div
+              class="customer d-flex flex-column justify-content align-items-center"
+            >
+              <h3 class="customer-name">Emily</h3>
+              <div class="img-container">
+                <img
+                  class="img-customer"
+                  src="./assets/images/person_3.png"
+                  alt="person_3"
+                />
+                <div class="container-buttons">
+                  <button onclick="leftPage()">
+                    <img src="./assets/icons/arrow-left.png" alt="arrow-left" />
+                  </button>
+                  <button onclick="rightPage()">
+                    <img
+                      src="./assets/icons/arrow-right.png"
+                      alt="arrow-right"
+                    />
+                  </button>
+                </div>
+              </div>
+              <p class="customer-desc">
+                I have tried countless skin care products in the past, but this
+                cream truly stands out. It's lightweight, non-greasy, and leaves
+                my skin feeling incredibly soft and hydrated.
+              </p>
+            </div>
+            <div
+              class="customer d-flex flex-column justify-content align-items-center"
+            >
+              <h3 class="customer-name">Samantha</h3>
+              <div class="img-container">
+                <img
+                  class="img-customer"
+                  src="./assets/images/person_3.png"
+                  alt="person_3"
+                />
+                <div class="container-buttons">
+                  <button onclick="leftPage()">
+                    <img src="./assets/icons/arrow-left.png" alt="arrow-left" />
+                  </button>
+                  <button onclick="rightPage()">
+                    <img
+                      src="./assets/icons/arrow-right.png"
+                      alt="arrow-right"
+                    />
+                  </button>
+                </div>
+              </div>
+              <p class="customer-desc">
+                I cannot recommend this skin care cream enough! It has done
+                wonders for my skin, reducing the appearance of fine lines and
+                improving its overall texture.
+              </p>
+            </div>
+          </div>
+          <a class="customer-link button-link" href="#" class="button-link"
+            >Read more</a
+          >
+        </div>
+      </section>
+      <!-- products form-->
 
-			<section class="container-form">
-				<img
-					class="obj-dec"
-					src="./assets/icons/adorno-5.png"
-					alt="adorno-5"
-				/>
-				<img
-					class="obj-dec-2"
-					src="./assets/icons/adorno-6.png"
-					alt="adorno-6"
-				/>
-				<div class="container-content">
-					<h2 class="title">
-						Do you want to receive notifications of our products?
-					</h2>
+      <section class="container-form">
+        <img class="obj-dec" src="./assets/icons/adorno-5.png" alt="adorno-5" />
+        <img
+          class="obj-dec-2"
+          src="./assets/icons/adorno-6.png"
+          alt="adorno-6"
+        />
+        <div class="container-content">
+          <h2 class="title">
+            Do you want to receive notifications of our products?
+          </h2>
 
-					<form class="form d-flex flex-column flex-flow flex-lg-row">
-						<input type="text" class="field mr-lg-3 mb-lg-3" />
-						<a href="#" class="button-link mt-lg-4">Read More</a>
-					</form>
-				</div>
-			</section>
+          <form class="form d-flex flex-column flex-flow flex-lg-row">
+            <input type="text" class="field mr-lg-3 mb-lg-3" />
+            <a href="#" class="button-link mt-lg-4">Read More</a>
+          </form>
+        </div>
+      </section>
 
-			<!-- Footer -->
-			<footer class="footer">
-				<div
-					class="container-footer d-flex flex-column justify-content-center align-items-center"
-				>
-					<div
-						class="links company-info d-flex flex-column justify-content-center align-items-center"
-					>
-						<a href="./index.html">
-							<img
-								class="logo-link"
-								src="./assets/images/logo-blanco.png"
-								alt="logo"
-							/>
-						</a>
+      <!-- Footer -->
+      <footer class="footer">
+        <div
+          class="container-footer d-flex flex-column justify-content-center align-items-center"
+        >
+          <div
+            class="links company-info mt-2 mt-lg-0 d-flex flex-column justify-content-between align-items-center"
+          >
+            <a href="./index.html">
+              <img
+                class="logo-link"
+                src="./assets/images/logo-blanco.png"
+                alt="logo"
+              />
+            </a>
 
-						<div
-							class="social-links d-flex justify-content-between"
-						>
-							<a href="#">
-								<img
-									src="./assets/icons/facebook.png"
-									alt="facebook"
-								/>
-							</a>
-							<a href="#">
-								<img
-									src="./assets/icons/instagram.png"
-									alt="instagram"
-								/>
-							</a>
-							<a href="#">
-								<img
-									src="./assets/icons/linkedin.png"
-									alt="linkedin"
-								/>
-							</a>
-						</div>
-					</div>
+            <div class="social-links d-flex justify-content-between">
+              <a
+                href="https://www.facebook.com/"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                <img src="./assets/icons/facebook.png" alt="facebook" />
+              </a>
+              <a
+                href="https://www.instagram.com/"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                <img src="./assets/icons/instagram.png" alt="instagram" />
+              </a>
+              <a
+                href="https://www.linkedin.com/"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                <img src="./assets/icons/linkedin.png" alt="linkedin" />
+              </a>
+            </div>
+          </div>
 
-					<div class="links more-info">
-						<h3>More information</h3>
-						<ul>
-							<li>
-								<a href="#"
-									><img
-										src="./assets/icons/map.png"
-										alt="map"
-									/><span
-										>5191 Eastside Hwy Stevensville, MT
-										59870</span
-									></a
-								>
-							</li>
-							<li>
-								<a href="mailto:info@glamping.global"
-									><img
-										src="./assets/icons/mail.png"
-										alt="mail"
-									/>
-									<span>info@glamping.global</span>
-								</a>
-							</li>
-							<li>
-								<a href="tel:+18449345267"
-									><img
-										src="./assets/icons/phone.png"
-										alt="phone"
-									/>
-									<span>Tel:1-844-WEGLAMP</span></a
-								>
-							</li>
-						</ul>
-					</div>
+          <div class="links more-info mt-5 mt-lg-0">
+            <h3>More information</h3>
+            <ul>
+              <li>
+                <a
+                  href="https://www.google.com/maps/"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                  ><img src="./assets/icons/map.png" alt="map" /><span
+                    >5191 Eastside Hwy Stevensville, MT 59870</span
+                  ></a
+                >
+              </li>
+              <li>
+                <a href="mailto:info@glamping.global"
+                  ><img src="./assets/icons/mail.png" alt="mail" />
+                  <span>info@glamping.global</span>
+                </a>
+              </li>
+              <li>
+                <a href="tel:+18449345267"
+                  ><img src="./assets/icons/phone.png" alt="phone" />
+                  <span>Tel:1-844-WEGLAMP</span></a
+                >
+              </li>
+            </ul>
+          </div>
 
-					<div class="links quick-links">
-						<h3>Quick Links</h3>
-						<ul>
-							<li><a href="./about_us.html">About us</a></li>
-							<li><a href="./shop.html">Shop by category </a></li>
-							<li><a href="#">Services</a></li>
-							<li><a href="./contact_us.html">Contact us</a></li>
-						</ul>
-					</div>
-				</div>
-				<div class="bottom-footer">
-					<div
-						class="container d-flex flex-column flex-lg-row justify-content-lg-between justify-content-center align-items-center text-center"
-					>
-						<p>
-							Copyright © 2022 All rights reserved | This Website
-							Was Designed And Developed by
-						</p>
-						<img
-							src="./assets/images/logo-js.png"
-							alt="logo"
-						/>
-					</div>
-				</div>
-			</footer>
-		</main>
-		<script src="js/jquery-3.7.0.min.js"></script>
-		<script src="./js/owl.carousel.min.js"></script>
-		<script src="./js/script.js"></script>
-	</body>
+          <div class="links quick-links mt-3 mt-lg-0">
+            <h3>Quick Links</h3>
+            <ul>
+              <li><a href="./about_us.html">About us</a></li>
+              <li><a href="./shop.html">Shop by category </a></li>
+              <li><a href="#">Services</a></li>
+              <li><a href="./contact_us.html">Contact us</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="bottom-footer">
+          <div
+            class="container d-flex flex-column flex-lg-row justify-content-lg-between justify-content-center align-items-center text-center"
+          >
+            <p>
+              Copyright © 2022 All rights reserved | This Website Was Designed
+              And Developed by
+            </p>
+            <a
+			href="https://striveenterprise.com/"
+			rel="noopener noreferrer"
+			target="_blank"
+			><img src="./assets/images/logo-js.png" alt="logo"/></a>
+          </div>
+        </div>
+      </footer>
+    </main>
+    <script src="js/jquery-3.7.0.min.js"></script>
+    <script src="./js/owl.carousel.min.js"></script>
+    <script src="./js/carousel-customer.js"></script>
+    <script src="./js/script.js"></script>
+  </body>
 </html>
