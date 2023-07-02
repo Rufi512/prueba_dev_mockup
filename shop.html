@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Contact us</title>
+    <title>Shop by category</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -29,83 +29,102 @@
   <body>
     <main>
       <header class="header">
-        <div class="col-12 content-header">
-          <div class="logo d-flex align-items-center">
-            <a
-              href="./index.html"
-              class="d-flex align-items-center container-fluid p-0"
-            >
-              <img src="./assets/images/LOGO.png" alt="Logo" />
-              <h1>Skin Care</h1>
-            </a>
-            <label for="show-header" class="bars-button"
-              ><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
-                <path
-                  d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"
-                /></svg
-            ></label>
-          </div>
-          <!--Navigation-->
-          <input type="checkbox" id="show-header" hidden />
-          <nav class="navigation nav">
-            <label for="show-header" class="xmark"
-              ><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
-                <path
-                  d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"
-                /></svg
-            ></label>
-            <a href="./index.html" class="logo-link">
-              <img src="./assets/images/logo-blanco.png" alt="logo" />
-            </a>
+        <!--Social links Top Header-->
+        <nav class="top-header nav-social ">
+         <ul class="social-links nav d-flex justify-content-between">
+           <div class="d-flex social">
+             <li class="nav-item">
+               <a href="mailto:info@glamping.global"
+                 ><img src="./assets/icons/mail.png" alt="mail"
+               /></a>
+             </li>
+             <li class="nav-item">
+               <a href="https://www.google.com/maps/place/5191+Eastside+Hwy,+Stevensville,+MT+59870/@46.5765327,-114.0596878,17z/data=!3m1!4b1!4m6!3m5!1s0x535e9d7ef9f69d0d:0xcd730b6742b60b98!8m2!3d46.576529!4d-114.0571129!16s%2Fg%2F11cs73n6tc?entry=ttu" rel="noopener noreferrer" target="_blank"><img src="./assets/icons/map.png" alt="map" /></a>
+             </li>
+             <li class="nav-item">
+               <a href="tel:+18449345267"
+                 ><img src="./assets/icons/phone.png" alt="phone"
+               /></a>
+             </li>
+           </div>
+         </ul>
+       </nav>
 
-            <ul>
-              <li class="nav-item">
-                <a href="/about_us.html">About us</a>
-              </li>
-              <li class="nav-item">
-                <a href="./shop.html">Shop by category</a>
-              </li>
-              <li class="nav-item">
-                <a href="./faq.html">Faq's</a>
-              </li>
-              <li class="nav-item">
-                <a href="./contact_us.html">Contact us</a>
-              </li>
-            </ul>
-          </nav>
+       <div class="col-12 content-header">
+         <div class="logo d-flex align-items-center">
+           <a
+             href="./index.html"
+             class="d-flex align-items-center container-fluid p-0"
+           >
+             <img src="./assets/images/LOGO.png" alt="Logo" />
+             <h1>Skin Care</h1>
+           </a>
+           
+         </div>
+         <!--Navigation-->
+         <input type="checkbox" id="show-header" hidden />
+         <nav class="navigation nav">
+           <label for="show-header" class="xmark"
+             ><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+               <path
+                 d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"
+               /></svg>
+             </label>
+           <a href="./index.html" class="logo-link">
+             <img src="./assets/images/logo-blanco.png" alt="logo" />
+           </a>
 
-          <!--Social links-->
-          <nav class="nav-social">
-            <ul class="social-links nav d-flex justify-content-between">
-              <div class="d-flex social">
-                <li class="nav-item">
-                  <a href="#"
-                    ><img src="./assets/icons/mail.png" alt="mail"
-                  /></a>
-                </li>
-                <li class="nav-item">
-                  <a href="#"><img src="./assets/icons/map.png" alt="map" /></a>
-                </li>
-                <li class="nav-item">
-                  <a href="#"
-                    ><img src="./assets/icons/phone.png" alt="phone"
-                  /></a>
-                </li>
-              </div>
-              <div class="items">
-                <li class="nav-item">
-                  <a href="#"
-                    ><img src="./assets/icons/search.png" alt="search"
-                  /></a>
-                  <a href="#"
-                    ><img src="./assets/icons/cart.png" alt="cart"
-                  /></a>
-                </li>
-              </div>
-            </ul>
-          </nav>
-        </div>
-      </header>
+           <ul>
+             <li class="nav-item"><a href="./about_us.html">About us</a></li>
+             <li class="nav-item">
+               <a href="./shop.html">Shop by category</a>
+             </li>
+             <li class="nav-item"><a href="./faq.html">Faq's</a></li>
+             <li class="nav-item">
+               <a href="./contact_us.html">Contact us</a>
+             </li>
+           </ul>
+         </nav>
+
+         <!--Social links-->
+         <nav class="nav-social">
+           <label for="show-header" class="bars-button"
+             ><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+               <path
+                 d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"
+               /></svg>
+             </label>
+             
+           <ul class="social-links nav d-flex justify-content-between">
+             <div class="social">
+               <li class="nav-item">
+                 <a href="mailto:info@glamping.global"
+                   ><img src="./assets/icons/mail.png" alt="mail"
+                 /></a>
+               </li>
+               <li class="nav-item">
+                 <a href="https://www.google.com/maps/place/5191+Eastside+Hwy,+Stevensville,+MT+59870/@46.5765327,-114.0596878,17z/data=!3m1!4b1!4m6!3m5!1s0x535e9d7ef9f69d0d:0xcd730b6742b60b98!8m2!3d46.576529!4d-114.0571129!16s%2Fg%2F11cs73n6tc?entry=ttu" rel="noopener noreferrer" target="_blank"><img src="./assets/icons/map.png" alt="map" /></a>
+               </li>
+               <li class="nav-item">
+                 <a href="tel:+18449345267"
+                   ><img src="./assets/icons/phone.png" alt="phone"
+                 /></a>
+               </li>
+             </div>
+             <div class="items">
+               <li class="nav-item">
+                 <a href="#"
+                   ><img src="./assets/icons/search.png" alt="search"
+                 /></a>
+                 <a href="#"
+                   ><img src="./assets/icons/cart.png" alt="cart"
+                 /></a>
+               </li>
+             </div>
+           </ul>
+         </nav>
+       </div>
+     </header>
 
       <!--Hero section-->
 
@@ -114,7 +133,7 @@
         <div aria-label="breadcrumb">
           <ol class="breadcrumb">
             <li class="breadcrumb-item"><a href="./index.html">Home</a></li>
-            <li class="breadcrumb-item active" aria-current="page">Faq's</li>
+            <li class="breadcrumb-item active" aria-current="page">Shop by category</li>
           </ol>
         </div>
       </section>
@@ -122,9 +141,10 @@
       <!-- Products section-->
 
       <section class="product-section col-12">
+        <img class="position-absolute obj-dec" src="./assets/icons/adorno-3.png" alt="adorno-3"/>
         <h2 class="text-center p-3">The Best Products For You</h2>
         <div
-          class="container container-products d-flex p-2 justify-content-around flex-wrap"
+          class="container container-products d-flex p-2 justify-content-around flex-wrap position-relative"
         >
           <div class="product d-flex flex-column">
             <div class="product-body d-flex flex-column">
@@ -266,7 +286,8 @@
         </div>
       </section>
 
-      <section class="product-section col-12">
+      <section class="product-section col-12 position-relative">
+        <img class="position-absolute obj-dec" src="./assets/icons/ellipse-white.png" alt="ellipse-white"/>
         <h2 id="Scrubs" class="text-center p-3">Scrubs</h2>
         <div
           class="container container-products d-flex p-2 justify-content-around flex-wrap"
@@ -342,7 +363,8 @@
         </div>
       </section>
 
-	  <section class="product-section col-12">
+	  <section class="product-section col-12 position-relative">
+      <img class="position-absolute obj-dec" src="./assets/icons/ellipse-white.png" alt="ellipse-white"/>
         <h2 id="Stain-resistant" class="text-center p-3">Stain resistant</h2>
         <div
           class="container container-products d-flex p-2 justify-content-around flex-wrap"
@@ -418,7 +440,8 @@
         </div>
       </section>
 
-	  <section class="product-section col-12">
+	  <section class="product-section col-12 position-relative">
+      <img class="position-absolute obj-dec" src="./assets/icons/adorno-8.png" alt="adorno-8"/>
         <h2 id="Mattifying" class="text-center p-3">Mattifying</h2>
         <div
           class="container container-products d-flex p-2 justify-content-around flex-wrap"
@@ -494,7 +517,9 @@
         </div>
       </section>
 
-	  <section class="product-section col-12">
+	  <section class="product-section col-12 position-relative">
+      <img class="position-absolute obj-dec" src="./assets/icons/ellipse-2.png" alt="ellipse-2"/>
+
         <h2 id="Moisturizers" class="text-center p-3">Moisturizers</h2>
         <div
           class="container container-products d-flex p-2 justify-content-around flex-wrap"
@@ -570,7 +595,8 @@
         </div>
       </section>
 
-	  <section class="product-section col-12">
+	  <section class="product-section col-12 position-relative">
+      <img class="position-absolute obj-dec" src="./assets/icons/adorno-7.png" alt="adorno-7"/>
         <h2 id="Tonics" class="text-center p-3">Tonics</h2>
         <div
           class="container container-products d-flex p-2 justify-content-around flex-wrap"
@@ -646,7 +672,7 @@
         </div>
       </section>
 
-	  <section class="product-section col-12">
+	  <section class="product-section col-12 position-relative">
         <h2 id="Anti-wrinkle" class="text-center p-3">Anti wrinkle</h2>
         <div
           class="container container-products d-flex p-2 justify-content-around flex-wrap"

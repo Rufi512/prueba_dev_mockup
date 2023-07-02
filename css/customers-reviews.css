@@ -45,7 +45,7 @@
 }
 
 .container-customers .customer .customer-desc {
-  margin-top: 50px;
+  margin-top: 30px;
   color: rgba(0, 0, 0, 0.58);
   font-family: "Andada Pro", serif;
   font-size: 1em;
@@ -97,10 +97,88 @@
   transform: scale(1.1);
 }
 
+.container-customers .customer .video-container{
+  position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+}
+
+.container-customers .customer .video-container .video{
+  position: relative;
+  border-radius: 10px;
+}
+
+.container-customers .customer .video-container video{
+    width: 100%;
+    max-width: 260px;
+    height: 250px;
+    object-fit: cover;
+    background: white;
+    border: 5px solid #fff;
+    box-shadow: -5px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    
+}
+
+.container-customers .customer .video-container .video img{
+  position: absolute;
+  top: 0;
+  z-index: 1;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+
+.container-customers .customer .video-container .front-video{
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #0c0c0c54;
+  border-radius: 10px;
+  z-index: 3;
+  transition: all 0.3s ease;
+}
+
+.container-customers .customer .video-container .front-video .bg-button{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #02020242;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: 1;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+
+.container-customers .customer .video-container .front-video .bg-button img{
+  display: flex;
+  width: 24px;
+  height: 24px;
+  margin: auto;
+}
+
 @media (min-width: 1024px) {
   /*container customer*/
   .carousel-customer {
-    max-width: 830px;
+    max-width: 750px;
     margin: 0 auto;
   }
   .container-customers .container-content {
@@ -110,22 +188,22 @@
   }
 
   .container-customers .container-list {
-    max-width: 830px;
+    max-width: 750px;
     margin-left: auto;
   }
 
   .container-customers .obj-dec-2 {
     position: absolute;
     margin: auto;
-    left: 60px;
+    left: 40px;
     top: -95px;
   }
 
   .container-customers .title {
     width: max-content;
-    z-index: 1;
+    z-index: 2;
     position: absolute;
-    left: 120px;
+    left: 77px;
     top: -18px;
     font-size: 2.2em;
   }
@@ -134,9 +212,9 @@
     margin-top: 50px;
     width: 100%;
     height: 356px;
-    max-width: 830px;
+    max-width: 750px;
     display: grid !important;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 2fr 1.5fr;
     grid-template-rows: 113px 125px;
     gap: 0px 0px;
     grid-auto-flow: row;
@@ -145,8 +223,16 @@
       "customer-desc img-container";
   }
 
+  .container-customers .customer .video-container{
+    margin: auto;
+  }
+
+  .container-customers .customer .video-container video{
+    max-width: 260px;
+  }
+
   .container-customers .customer .customer-name {
-    max-width: 320px;
+    max-width: 280px;
   }
 
   .container-customers .customer-name {

@@ -92,7 +92,7 @@ button {
 
 .title {
   color: var(--color-blue);
-  font-size: 2.6em;
+  font-size: 2.5em;
   text-align: center;
   font-family: "Jost", serif;
   font-weight: 700;
@@ -137,7 +137,7 @@ button {
 .button-link:hover {
   color: white;
   text-decoration: none;
-  background: #eb6f50;
+  background: #cf4c2b;
 }
 
 .container-find-us {
@@ -180,4 +180,15 @@ button {
 .container-map iframe {
   width: 100%;
   height: 300px;
+}
+
+
+.container-find-us .obj-dec{
+  top: 40px;
+  right: 0;
+}
+
+.container-find-us .obj-dec:last-of-type{
+  left: 0;
+  top: 150px;
 }

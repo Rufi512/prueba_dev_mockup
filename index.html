@@ -4,6 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Skin Care</title>
+    <link
+      rel="shortcut icon"
+      href="./assets/images/LOGO.png"
+      type="image/x-icon"
+    />
     <link rel="stylesheet" href="./css/owl.carousel.min.css" />
     <link rel="stylesheet" href="./css/owl.theme.default.min.css" />
     <link
@@ -19,11 +24,33 @@
     ></script>
     <link rel="stylesheet" href="./css/header.css" />
     <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/customers-reviews.css">
     <link rel="stylesheet" href="./css/footer.css" />
   </head>
   <body>
     <main>
       <header class="header">
+         <!--Social links Top Header-->
+         <nav class="top-header nav-social ">
+          <ul class="social-links nav d-flex justify-content-between">
+            <div class="d-flex social">
+              <li class="nav-item">
+                <a href="mailto:info@glamping.global"
+                  ><img src="./assets/icons/mail.png" alt="mail"
+                /></a>
+              </li>
+              <li class="nav-item">
+                <a href="https://www.google.com/maps/place/5191+Eastside+Hwy,+Stevensville,+MT+59870/@46.5765327,-114.0596878,17z/data=!3m1!4b1!4m6!3m5!1s0x535e9d7ef9f69d0d:0xcd730b6742b60b98!8m2!3d46.576529!4d-114.0571129!16s%2Fg%2F11cs73n6tc?entry=ttu" rel="noopener noreferrer" target="_blank"><img src="./assets/icons/map.png" alt="map" /></a>
+              </li>
+              <li class="nav-item">
+                <a href="tel:+18449345267"
+                  ><img src="./assets/icons/phone.png" alt="phone"
+                /></a>
+              </li>
+            </div>
+          </ul>
+        </nav>
+
         <div class="col-12 content-header">
           <div class="logo d-flex align-items-center">
             <a
@@ -33,12 +60,7 @@
               <img src="./assets/images/LOGO.png" alt="Logo" />
               <h1>Skin Care</h1>
             </a>
-            <label for="show-header" class="bars-button"
-              ><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
-                <path
-                  d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"
-                /></svg
-            ></label>
+            
           </div>
           <!--Navigation-->
           <input type="checkbox" id="show-header" hidden />
@@ -47,8 +69,8 @@
               ><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
                 <path
                   d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"
-                /></svg
-            ></label>
+                /></svg>
+              </label>
             <a href="./index.html" class="logo-link">
               <img src="./assets/images/logo-blanco.png" alt="logo" />
             </a>
@@ -67,18 +89,25 @@
 
           <!--Social links-->
           <nav class="nav-social">
+            <label for="show-header" class="bars-button"
+              ><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                <path
+                  d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"
+                /></svg>
+              </label>
+              
             <ul class="social-links nav d-flex justify-content-between">
-              <div class="d-flex social">
+              <div class="social">
                 <li class="nav-item">
-                  <a href="#"
+                  <a href="mailto:info@glamping.global"
                     ><img src="./assets/icons/mail.png" alt="mail"
                   /></a>
                 </li>
                 <li class="nav-item">
-                  <a href="#"><img src="./assets/icons/map.png" alt="map" /></a>
+                  <a href="https://www.google.com/maps/place/5191+Eastside+Hwy,+Stevensville,+MT+59870/@46.5765327,-114.0596878,17z/data=!3m1!4b1!4m6!3m5!1s0x535e9d7ef9f69d0d:0xcd730b6742b60b98!8m2!3d46.576529!4d-114.0571129!16s%2Fg%2F11cs73n6tc?entry=ttu" rel="noopener noreferrer" target="_blank"><img src="./assets/icons/map.png" alt="map" /></a>
                 </li>
                 <li class="nav-item">
-                  <a href="#"
+                  <a href="tel:+18449345267"
                     ><img src="./assets/icons/phone.png" alt="phone"
                   /></a>
                 </li>
@@ -239,8 +268,8 @@
 
       <!-- About us-->
 
-      <section class="container-about-us">
-        <div class="container-content">
+      <section class="container-about-us col-12">
+        <div class="container-content container">
           <img
             class="logo-bg"
             src="./assets/images/logo-background.png"
@@ -272,6 +301,7 @@
               standard in providing the most reliable and innovative product
               identification solutions anywhere in the world.
             </p>
+            <img class="image-content" src="./assets/images/about-3.jpg" alt="about-3" />
             <a href="./about_us.html" class="button-link btn-blue">Read more</a>
           </div>
         </div>
@@ -400,12 +430,17 @@
               class="customer d-flex flex-column justify-content align-items-center"
             >
               <h3 class="customer-name">Jhon Smith</h3>
-              <div class="img-container">
-                <img
-                  class="img-customer"
-                  src="./assets/images/person_3.png"
-                  alt="person_3"
-                />
+              <div class="video-container" id="video-1">
+                <div class="video">
+                  <button class="front-video player-preview" onclick="playVideo('video-1')">
+                    <img  src="./assets/images/person_3.png" alt="person">
+                    <div class="bg-button">
+                      <img src="./assets/icons/arrow-right.png" class="icon player-preview" alt="right">-
+                    </div>
+                  </button>
+                  
+                <video id="video-review" class="video-player" src="./assets/videos/hero-video.mp4" class="video-review" controls></video>
+              </div>
                 <div class="container-buttons">
                   <button onclick="leftPage()">
                     <img src="./assets/icons/arrow-left.png" alt="arrow-left" />
@@ -481,7 +516,7 @@
               </p>
             </div>
           </div>
-          <a class="customer-link button-link" href="#" class="button-link"
+          <a class="customer-link button-link" target="_blank" rel="noopener noreferrer" href="https://www.google.com/search?q=josesilvera+enterprises&oq=jose&aqs=chrome.0.69i59j69i57j69i59j69i61.1999j0j1&sourceid=chrome&ie=UTF-8#lrd=0x80c8c3c501357acd:0x8f81737d4cf0e844,1,,,," class="button-link"
             >Read more</a
           >
         </div>
@@ -500,9 +535,9 @@
             Do you want to receive notifications of our products?
           </h2>
 
-          <form class="form d-flex flex-column flex-flow flex-lg-row">
+          <form class="form d-flex flex-column align-items-center">
             <input type="text" class="field mr-lg-3 mb-lg-3" />
-            <a href="#" class="button-link mt-lg-4">Read More</a>
+            <a href="#" class="button-link mt-lg-0">Read More</a>
           </form>
         </div>
       </section>
@@ -553,7 +588,7 @@
             <ul>
               <li>
                 <a
-                  href="https://www.google.com/maps/"
+                  href="https://www.google.com/maps/place/5191+Eastside+Hwy,+Stevensville,+MT+59870/@46.5765327,-114.0596878,17z/data=!3m1!4b1!4m6!3m5!1s0x535e9d7ef9f69d0d:0xcd730b6742b60b98!8m2!3d46.576529!4d-114.0571129!16s%2Fg%2F11cs73n6tc?entry=ttu"
                   rel="noopener noreferrer"
                   target="_blank"
                   ><img src="./assets/icons/map.png" alt="map" /><span

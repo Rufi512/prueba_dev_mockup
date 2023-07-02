@@ -131,6 +131,7 @@ button {
 .securities {
   background: rgba(24, 204, 231, 0.16);
   padding: 30px 0;
+  overflow: hidden;
 }
 
 .button-link {
@@ -171,7 +172,7 @@ button {
 .button-link:hover {
   color: white;
   text-decoration: none;
-  background: #eb6f50;
+  background: #cf4c2b;
 }
 
 .securities .card .card-title {
@@ -239,10 +240,27 @@ button {
   padding-top: 30px;
 }
 
-.container-reviews h3:first-of-type {
+.container-reviews .subtitle{
   color: var(--color-blue);
   text-align: center;
   font-size: 1.2em;
+  margin:20px auto
+}
+
+.about-us .obj-dec:first-of-type{
+  top: -130px;
+  transform: scaleX(-1);
+  z-index: -1;
+}
+
+.securities .obj-dec:first-of-type{
+  top: -340px;
+  right: 0;
+}
+
+.securities .obj-dec:last-of-type{
+  bottom:-80px;
+  left: 0;
 }
 
 @media only screen and (max-width: 992px) and (min-width: 768px) {

@@ -16,14 +16,6 @@
     <link rel="stylesheet" href="./css/customers-reviews.css">
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/fontawesome.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/solid.min.css"
-    />
-    <link
-      rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css"
       integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
       crossorigin="anonymous"
@@ -40,77 +32,103 @@
   <body>
     <main>
       <header class="header">
-        <div class="col-12 content-header">
-          <div class="logo d-flex align-items-center">
-            <a
-              href="./index.html"
-              class="d-flex align-items-center container-fluid p-0"
-            >
-              <img src="./assets/images/LOGO.png" alt="Logo" />
-              <h1>Skin Care</h1>
-            </a>
-            <label for="show-header" class="bars-button"
-              ><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
-                <path
-                  d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"
-                /></svg></label>
-          </div>
-          <!--Navigation-->
-          <input type="checkbox" id="show-header" hidden />
-          <nav class="navigation nav">
-            <label for="show-header" class="xmark"
-              ><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
-                <path
-                  d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"
-                /></svg></label>
-            <a href="./index.html" class="logo-link">
-              <img src="./assets/images/logo-blanco.png" alt="logo" />
-            </a>
+        <!--Social links Top Header-->
+        <nav class="top-header nav-social ">
+         <ul class="social-links nav d-flex justify-content-between">
+           <div class="d-flex social">
+             <li class="nav-item">
+               <a href="mailto:info@glamping.global"
+                 ><img src="./assets/icons/mail.png" alt="mail"
+               /></a>
+             </li>
+             <li class="nav-item">
+               <a href="https://www.google.com/maps/place/5191+Eastside+Hwy,+Stevensville,+MT+59870/@46.5765327,-114.0596878,17z/data=!3m1!4b1!4m6!3m5!1s0x535e9d7ef9f69d0d:0xcd730b6742b60b98!8m2!3d46.576529!4d-114.0571129!16s%2Fg%2F11cs73n6tc?entry=ttu" rel="noopener noreferrer" target="_blank"><img src="./assets/icons/map.png" alt="map" /></a>
+             </li>
+             <li class="nav-item">
+               <a href="tel:+18449345267"
+                 ><img src="./assets/icons/phone.png" alt="phone"
+               /></a>
+             </li>
+           </div>
+         </ul>
+       </nav>
 
-            <ul>
-              <li class="nav-item"><a href="./about_us.html">About us</a></li>
-              <li class="nav-item">
-                <a href="./shop.html">Shop by category</a>
-              </li>
-              <li class="nav-item"><a href="./faq.html">Faq's</a></li>
-              <li class="nav-item">
-                <a href="./contact_us.html">Contact us</a>
-              </li>
-            </ul>
-          </nav>
+       <div class="col-12 content-header">
+         <div class="logo d-flex align-items-center">
+           <a
+             href="./index.html"
+             class="d-flex align-items-center container-fluid p-0"
+           >
+             <img src="./assets/images/LOGO.png" alt="Logo" />
+             <h1>Skin Care</h1>
+           </a>
+           
+         </div>
+         <!--Navigation-->
+         <input type="checkbox" id="show-header" hidden />
+         <nav class="navigation nav">
+           <label for="show-header" class="xmark"
+             ><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+               <path
+                 d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"
+               /></svg>
+             </label>
+           <a href="./index.html" class="logo-link">
+             <img src="./assets/images/logo-blanco.png" alt="logo" />
+           </a>
 
-          <!--Social links-->
-          <nav class="nav-social">
-            <ul class="social-links nav d-flex justify-content-between">
-              <div class="d-flex social">
-                <li class="nav-item">
-                  <a href="#"
-                    ><img src="./assets/icons/mail.png" alt="mail"
-                  /></a>
-                </li>
-                <li class="nav-item">
-                  <a href="#"><img src="./assets/icons/map.png" alt="map" /></a>
-                </li>
-                <li class="nav-item">
-                  <a href="#"
-                    ><img src="./assets/icons/phone.png" alt="phone"
-                  /></a>
-                </li>
-              </div>
-              <div class="items">
-                <li class="nav-item">
-                  <a href="#"
-                    ><img src="./assets/icons/search.png" alt="search"
-                  /></a>
-                  <a href="#"
-                    ><img src="./assets/icons/cart.png" alt="cart"
-                  /></a>
-                </li>
-              </div>
-            </ul>
-          </nav>
-        </div>
-      </header>
+           <ul>
+             <li class="nav-item"><a href="./about_us.html">About us</a></li>
+             <li class="nav-item">
+               <a href="./shop.html">Shop by category</a>
+             </li>
+             <li class="nav-item"><a href="./faq.html">Faq's</a></li>
+             <li class="nav-item">
+               <a href="./contact_us.html">Contact us</a>
+             </li>
+           </ul>
+         </nav>
+
+         <!--Social links-->
+         <nav class="nav-social">
+           <label for="show-header" class="bars-button"
+             ><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+               <path
+                 d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"
+               /></svg>
+             </label>
+             
+           <ul class="social-links nav d-flex justify-content-between">
+             <div class="social">
+              <li class="nav-item">
+                <a href="mailto:info@glamping.global"
+                  ><img src="./assets/icons/mail.png" alt="mail"
+                /></a>
+              </li>
+              <li class="nav-item">
+                <a href="https://www.google.com/maps/place/5191+Eastside+Hwy,+Stevensville,+MT+59870/@46.5765327,-114.0596878,17z/data=!3m1!4b1!4m6!3m5!1s0x535e9d7ef9f69d0d:0xcd730b6742b60b98!8m2!3d46.576529!4d-114.0571129!16s%2Fg%2F11cs73n6tc?entry=ttu" rel="noopener noreferrer" target="_blank"><img src="./assets/icons/map.png" alt="map" /></a>
+              </li>
+              <li class="nav-item">
+                <a href="tel:+18449345267"
+                  ><img src="./assets/icons/phone.png" alt="phone"
+                /></a>
+              </li>
+             </div>
+             <div class="items">
+               <li class="nav-item">
+                 <a href="#"
+                   ><img src="./assets/icons/search.png" alt="search"
+                 /></a>
+                 <a href="#"
+                   ><img src="./assets/icons/cart.png" alt="cart"
+                 /></a>
+               </li>
+             </div>
+           </ul>
+         </nav>
+       </div>
+     </header>
+
 
       <!-- Hero Content -->
       <section class="hero-about">
@@ -123,7 +141,8 @@
         </div>
       </section>
 
-      <section class="about-us d-flex">
+      <section class="about-us d-flex position-relative">
+        <img class="position-absolute obj-dec" src="./assets/icons/ellipse-2.png" alt="ellipse-2"/>
         <div class="content">
           <div class="about-content">
             <h2>The Company</h2>
@@ -172,7 +191,9 @@
         </div>
       </section>
       <!--Mission, vision, values-->
-      <section class="col-12 securities">
+      <section class="col-12 securities position-relative">
+        <img class="position-absolute obj-dec" src="./assets/icons/ellipse-white.png" alt="ellipse-white"/>
+        <img class="position-absolute obj-dec" src="./assets/icons/adorno-6.png" alt="adorno-6"/>
         <div class="container">
           <div class="row">
             <div class="col-md-4 m-2 m-md-0">
@@ -228,26 +249,33 @@
       <!--Reviews-->
       <section class="col-12 container-reviews">
         <h2 class="title">Review</h2>
-        <h3>Check it out the reviews from us customers!</h3>
-        <div
-          class="container-list owl-carousel carousel-customer container-customers"
-        >
+        <h3 class="subtitle">Check it out the reviews from us customers!</h3>
+        <div class="container-customers">
+        <div class="container-list owl-carousel carousel-customer">
           <div
             class="customer d-flex flex-column justify-content align-items-center"
           >
             <h3 class="customer-name">Jhon Smith</h3>
-            <div class="img-container">
-              <img
-                class="img-customer"
-                src="./assets/images/person_3.png"
-                alt="person_3"
-              />
+            <div class="video-container" id="video-1">
+              <div class="video">
+                <button class="front-video player-preview" onclick="playVideo('video-1')">
+                  <img  src="./assets/images/person_3.png" alt="person">
+                  <div class="bg-button">
+                    <img src="./assets/icons/arrow-right.png" class="icon player-preview" alt="right">-
+                  </div>
+                </button>
+                
+              <video id="video-review" class="video-player" src="./assets/videos/hero-video.mp4" class="video-review" controls></video>
+            </div>
               <div class="container-buttons">
                 <button onclick="leftPage()">
                   <img src="./assets/icons/arrow-left.png" alt="arrow-left" />
                 </button>
                 <button onclick="rightPage()">
-                  <img src="./assets/icons/arrow-right.png" alt="arrow-right" />
+                  <img
+                    src="./assets/icons/arrow-right.png"
+                    alt="arrow-right"
+                  />
                 </button>
               </div>
             </div>
@@ -272,7 +300,10 @@
                   <img src="./assets/icons/arrow-left.png" alt="arrow-left" />
                 </button>
                 <button onclick="rightPage()">
-                  <img src="./assets/icons/arrow-right.png" alt="arrow-right" />
+                  <img
+                    src="./assets/icons/arrow-right.png"
+                    alt="arrow-right"
+                  />
                 </button>
               </div>
             </div>
@@ -297,7 +328,10 @@
                   <img src="./assets/icons/arrow-left.png" alt="arrow-left" />
                 </button>
                 <button onclick="rightPage()">
-                  <img src="./assets/icons/arrow-right.png" alt="arrow-right" />
+                  <img
+                    src="./assets/icons/arrow-right.png"
+                    alt="arrow-right"
+                  />
                 </button>
               </div>
             </div>
@@ -308,6 +342,8 @@
             </p>
           </div>
         </div>
+
+      </div>
       </section>
 
 

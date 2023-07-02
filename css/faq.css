@@ -67,7 +67,7 @@ h3 {
 .button-link:hover {
   color: white;
   text-decoration: none;
-  background: #eb6f50;
+  background: #cf4c2b;
 }
 
 .breadcrumb {
@@ -170,11 +170,19 @@ h3 {
   background: #153f8b !important;
 }
 
-.container-reviews h3 {
+.container-reviews .subtitle  {
   color: var(--color-blue);
   text-align: center;
   font-size: 1.2em;
   margin: 20px 0;
+}
+
+.container-faq .obj-dec:first-of-type{
+  bottom: 50px;
+}
+
+.container-faq .obj-dec:last-of-type{
+  right: 0;
 }
 
 @media (min-width: 1024px) {

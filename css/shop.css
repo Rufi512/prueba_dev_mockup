@@ -95,6 +95,7 @@ h3 {
   margin-bottom: 20px;
   max-width: 1040px;
   margin: auto;
+  z-index: 1;
 }
 
 .product {
@@ -166,6 +167,7 @@ h3 {
 
 .circle-link:hover {
   filter: hue-rotate(36deg);
+  transform: scale(1.1);
 }
 
 .product .cart-add {
@@ -192,4 +194,32 @@ h3 {
 .product .price {
   font-size: 1.2em;
   padding-right: 20px;
+}
+
+.product-section:nth-of-type(2) .obj-dec{
+  top:300px;
+  left:0;
+}
+
+.product-section:nth-of-type(3) .obj-dec{
+  top: -150px;
+  right: 0;
+
+}
+
+.product-section:nth-of-type(4) .obj-dec{
+  top: 150px;
+  left: -184px;
+  transform: scaleX(-1) rotate(325deg);
+}
+
+
+.product-section:nth-of-type(5) .obj-dec{
+  top: 10px;
+  right: 0;
+}
+
+.product-section:nth-of-type(6) .obj-dec{
+  top: 140px;
+  right: -210px;
 }

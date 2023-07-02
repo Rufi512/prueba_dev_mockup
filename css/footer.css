@@ -60,6 +60,19 @@
 
 .footer ul li a:hover {
   color: #d7e0ff;
+  transform: scale(1.08);
+}
+
+.footer .social-links a{
+  transition: all 0.3s ease;
+}
+
+.footer .social-links a:hover{
+  transform: scale(1.08);
+}
+
+.footer .company-info{
+  margin-bottom: 30px;
 }
 
 .footer .container {
@@ -189,7 +202,8 @@
 
   .footer .company-info {
     height: 223px;
-    margin-top: -25px !important;
+    margin-top: -50px !important;
+    margin-bottom: 0 !important;
   }
 
   .footer ul li:first-of-type a img {
