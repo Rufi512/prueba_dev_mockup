@@ -1,10 +1,12 @@
 window.addEventListener('scroll',(e)=>{
   if(window.scrollY >= 60){
     document.querySelector('.header').classList.add('header-bg')
+    document.querySelector('.top-header').classList.add('top-header-bg')
     return
   }
 
     document.querySelector('.header').classList.remove('header-bg')
+    document.querySelector('.top-header').classList.remove('top-header-bg')
 })
 
 window.addEventListener('load',()=>{

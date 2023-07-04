@@ -53,12 +53,19 @@ header .logo h1 {
   font-family: "jost", serif;
   font-weight: 700;
 }
-header .top-header{
+header .top-header {
   display: flex;
   align-items: center;
   justify-content: center;
+  height: 40px;
+  transition: all 0.3s ease;
 }
-header .top-header ul{
+
+header .top-header-bg {
+  background: #016dad;
+}
+
+header .top-header ul {
   margin: 10px auto;
 }
 
@@ -66,11 +73,7 @@ header .navigation .xmark {
   fill: white;
 }
 
-/*header .social-links {
-  margin: 20px auto;
-}*/
-
-header .social-links .social{
+header .social-links .social {
   display: none;
 }
 
@@ -82,19 +85,20 @@ header .social-links .nav-item,
   transition: all 0.3s ease;
 }
 
-header .nav-social{
+header .nav-social {
   display: flex;
   flex-direction: row-reverse;
   align-items: center;
 }
 
-header .content-header{
+header .content-header {
+  padding: 5px 12px;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-header .social{
+header .social {
   display: flex;
   align-items: center;
 }
@@ -121,9 +125,7 @@ header .social .nav-item {
   height: 18px;
 }
 
-
-
-header .items .nav-item{
+header .items .nav-item {
   position: relative;
   display: flex;
   justify-content: space-between;
@@ -213,7 +215,7 @@ header .navigation ul li a {
   transition: all 0.3s ease;
 }
 
-header .navigation .logo-link{
+header .navigation .logo-link {
   margin-right: 65px;
 }
 
@@ -240,7 +242,6 @@ header .navigation .xmark {
 
 .header-bg {
   background: white;
-  padding-bottom: 10px;
 }
 
 @media (min-width: 1024px) {
@@ -248,10 +249,9 @@ header .navigation .xmark {
     padding: 20px 0;
   }
 
-  header .top-header{
+  header .top-header {
     display: none !important;
   }
-  
 
   header .logo {
     width: max-content;
@@ -266,6 +266,7 @@ header .navigation .xmark {
   }
 
   header .content-header {
+    padding: 2px 12px;
     display: flex;
     justify-content: space-between;
   }
@@ -303,7 +304,7 @@ header .navigation .xmark {
 
   header .logo img {
     height: 62px;
-}
+  }
 
   header .navigation .logo-link,
   header .xmark {
@@ -326,7 +327,6 @@ header .navigation .xmark {
   header .social-links {
     margin: 0;
   }
-  
 
   header .nav-social {
     display: flex;

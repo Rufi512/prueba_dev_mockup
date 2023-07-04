@@ -1,73 +1,74 @@
-.container-float-buttons{
-    position: fixed;
-    bottom: 20px;
-    right: 8px;
-    padding: 0 10px;
-    opacity: 0;
-    visibility: hidden;
-    transition :all 0.3s ease;
-    z-index: 3;
+.container-float-buttons {
+  position: fixed;
+  bottom: 20px;
+  right: 8px;
+  padding: 0 10px;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+  z-index: 3;
 }
 
-.container-float-buttons-visible{
-    opacity: 1 !important;
-    visibility: visible !important;
+.container-float-buttons-visible {
+  opacity: 1 !important;
+  visibility: visible !important;
 }
 
-.container-float-buttons ul li a, .container-float-buttons button{
-    background: var(--color-blue);
-    margin: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 35px;
-    height: 35px;
-    margin: 3px 0;
-    border-radius: 100%;
-    transition: all 0.3s ease;
+.container-float-buttons ul li a,
+.container-float-buttons button {
+  background: var(--color-blue);
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 35px;
+  height: 35px;
+  margin: 3px 0;
+  border-radius: 100%;
+  transition: all 0.3s ease;
 }
 
-.container-float-buttons button{
-    position: relative;
-    color: white;
-    font-size: 2em;
-    font-weight: 700;
-    margin-top: -10px;
-    z-index: 2;
+.container-float-buttons button {
+  position: relative;
+  color: white;
+  font-size: 2em;
+  font-weight: 700;
+  margin-top: -10px;
+  z-index: 2;
 }
 
-.container-float-buttons button svg{
-    fill: white;
-    width: 21px;
-    height: 21px;
+.container-float-buttons button svg {
+  fill: white;
+  width: 21px;
+  height: 21px;
 }
 
 .container-float-buttons .container {
-    position: relative;
-    overflow: hidden;
+  position: relative;
+  overflow: hidden;
 }
 
 .container-float-buttons ul {
-    position: relative;
-    max-height: 0px;
-    visibility: hidden;
-    margin-bottom: 20px;
-    opacity: 0;
-    z-index: 1;
-    transition: all 0.5s ease;
-    /*246px*/
+  position: relative;
+  max-height: 0px;
+  visibility: hidden;
+  margin-bottom: 20px;
+  opacity: 0;
+  z-index: 1;
+  transition: all 0.5s ease;
+  /*246px*/
 }
 
-.container-float-buttons ul li{
-    position: relative;
+.container-float-buttons ul li {
+  position: relative;
 }
 
-.container-float-buttons ul li a:hover{
-    transform: scale(1.1);
+.container-float-buttons ul li a:hover {
+  transform: scale(1.1);
 }
 
-.container-float-buttons ul li a img{
-    margin: auto;
-    width: 21px;
-    height: 21px;
+.container-float-buttons ul li a img {
+  margin: auto;
+  width: 21px;
+  height: 21px;
 }

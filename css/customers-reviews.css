@@ -1,13 +1,25 @@
 /*Customers*/
 
+.container-customers {
+  position: relative;
+  padding: 50px 0;
+  background: rgba(24, 204, 231, 0.16);
+  overflow: hidden;
+}
+
 .container-customers .customer {
-  width: 75%;
+  width: 100%;
   max-width: 424px;
-  margin: 0 auto;
+  margin: auto;
+}
+
+.container-customers .player-active {
+  opacity: 0;
+  visibility: hidden;
 }
 
 .container-customers .title {
-  font-size: 2em;
+  font-size: 2.2em;
   margin-bottom: 40px;
 }
 
@@ -42,16 +54,17 @@
   font-family: "Andada Pro", serif;
   background: var(--color-blue);
   border-radius: 60px;
+  margin: auto;
 }
 
 .container-customers .customer .customer-desc {
   margin-top: 30px;
   color: rgba(0, 0, 0, 0.58);
   font-family: "Andada Pro", serif;
-  font-size: 0.89em;
+  line-height: 1.4;
+  font-size: 17px;
   text-align: center;
   padding: 0 12px;
-  line-height: 1.2;
 }
 
 .container-customers .container-buttons {
@@ -98,35 +111,35 @@
   transform: scale(1.1);
 }
 
-.container-customers .customer .video-container{
+.container-customers .customer .video-container {
   position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: auto;
-    margin-top: 30px;
-    margin-bottom: 30px;
-    border-radius: 0px 130px 0px 0px;
-}
-
-.container-customers .customer .video-container .video{
-  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
   border-radius: 0px 130px 0px 0px;
 }
 
-.container-customers .customer .video-container video{
-    width: 100%;
-    max-width: 267px;
-    height: 260px;
-    object-fit: cover;
-    background: white;
-    border: 5px solid #fff;
-    box-shadow: -5px 4px 4px 0px rgba(0, 0, 0, 0.25);
-    border-radius: 0px 130px 0px 0px;
-    
+.container-customers .customer .video-container .video {
+  position: relative;
+  border-radius: 0px 130px 0px 0px;
+  height: 100%;
 }
 
-.container-customers .customer .video-container .video img{
+.container-customers .customer .video-container video {
+  width: 100%;
+  max-width: 267px;
+  height: 260px;
+  object-fit: cover;
+  background: white;
+  border: 5px solid #fff;
+  box-shadow: -5px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  border-radius: 0px 130px 0px 0px;
+}
+
+.container-customers .customer .video-container .video img {
   position: absolute;
   top: 0;
   z-index: 1;
@@ -139,7 +152,7 @@
   border-radius: 0px 130px 0px 0px;
 }
 
-.container-customers .customer .video-container .front-video{
+.container-customers .customer .video-container .front-video {
   position: absolute;
   display: flex;
   justify-content: center;
@@ -156,7 +169,7 @@
   transition: all 0.3s ease;
 }
 
-.container-customers .customer .video-container .front-video .bg-button{
+.container-customers .customer .video-container .front-video .bg-button {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -171,21 +184,57 @@
   color: transparent;
 }
 
-.container-customers .customer .video-container .front-video .bg-button img{
+.container-customers .customer .video-container .front-video .bg-button img {
   display: flex;
   width: 24px;
   height: 24px;
   margin: auto;
+  transform: scale(1);
+  box-shadow: -3px -8px 15px 8px transparent;
+  transition: all 0.3s ease;
 }
 
-@media (min-width: 1024px) {
+.container-customers .customer .video-container .front-video .bg-button .icon {
+  border-radius: 0px;
+}
+
+.container-customers
+  .customer
+  .video-container
+  .front-video:hover
+  .bg-button
+  img {
+  transform: scale(1.2);
+  box-shadow: -3px -8px 15px 8px #cdcdcd61;
+}
+
+.container-customers .button-link {
+  margin-top: 40px;
+}
+
+.container-customers .obj-dec {
+  position: absolute;
+  left: -45px;
+  bottom: 0;
+}
+
+.container-customers .obj-dec-2 {
+  position: absolute;
+  margin: auto;
+  left: 40px;
+  top: -95px;
+  z-index: -1;
+}
+
+@media (min-width: 992px) {
   /*container customer*/
+  .container-customers {
+    padding: 70px 0;
+  }
   .carousel-customer {
-    max-width: 750px;
     margin: 20px auto;
   }
   .container-customers .container-content {
-    max-width: 1100px;
     margin: auto;
     padding: 0 20px;
   }
@@ -195,11 +244,14 @@
     margin-left: auto;
   }
 
-  .container-customers .obj-dec-2 {
-    position: absolute;
+  .container-customers .customer {
+    max-width: 690px;
     margin: auto;
-    left: 40px;
-    top: -95px;
+  }
+
+  .container-customers .customer .video-container {
+    width: 267px;
+    height: 340px;
   }
 
   .container-customers .title {
@@ -211,44 +263,26 @@
     font-size: 2.2em;
   }
 
-  .container-customers .customer {
-    margin-top: 50px;
-    width: 100%;
-    height: 356px;
-    max-width: 750px;
-    display: grid !important;
-    grid-template-columns: 2fr 1.5fr;
-    grid-template-rows: 113px 125px;
-    gap: 0px 0px;
-    grid-auto-flow: row;
-    grid-template-areas:
-      "customer-name img-container"
-      "customer-desc img-container";
-  }
-
-  .container-customers .customer .video-container{
+  .container-customers .customer .video-container {
     margin: auto;
-    margin-top: -40px;
-    margin-left: 50px;
+    margin-bottom: 84px;
+    margin-left: 30px;
   }
 
-  .container-customers .customer .video-container video{
-    height: 323px;
+  .container-customers .customer .video-container video {
+    height: 100%;
     max-width: 267px;
   }
 
   .container-customers .customer .customer-name {
+    margin: 0;
+    margin-top: 54px;
     max-width: 280px;
   }
 
-  .container-customers .customer-name {
-    grid-area: customer-name;
-  }
-
   .container-customers .customer .img-container {
-    grid-area: img-container;
-    height: 340px;
-    margin-right: 0;
+    margin: 0;
+    margin-left: 40px;
   }
 
   .container-customers .customer .img-container .img-customer {
@@ -257,16 +291,24 @@
   }
 
   .container-customers .customer .customer-desc {
-    grid-area: customer-desc;
     text-align: left;
-    font-size: 1.15em;
-    margin-top: 0px;
+    font-size: 17px;
+    margin-top: 30px;
+    line-height: 1.4;
     padding: 0;
+  }
+
+  .container-customers .button-link {
+    margin-right: 0;
+    margin-top: -126px;
+    margin-left: auto;
+    margin-right: 44%;
+    z-index: 100;
   }
 }
 
-@media(min-width:768px){
-  .container-faq .img{
+@media (min-width: 768px) {
+  .container-faq .img {
     height: 380px;
   }
 }

@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 :root {
   --color-blue: #016dad;
   --color-orange: #ff7a59;
@@ -19,17 +23,32 @@ h3 {
 }
 
 p{
-  line-height: 1.2;
+  line-height: 1.4;
+  font-size: 17px;
+}
+
+.anchor {
+  display: block;
+  position: relative;
+  top: -250px;
+  visibility: hidden;
 }
 
 .title {
   color: var(--color-blue);
-  font-size: 2.8em;
+  font-size: 2.2em;
   text-align: center;
   font-family: "Jost", serif;
   font-weight: 700;
   padding: 0 20px;
   margin: 15px 0;
+}
+
+.container-section-products .img-content {
+  display: flex;
+  border: 5px solid #fff;
+  box-shadow: -5px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  object-fit: cover;
 }
 
 .hero-shop {
@@ -79,34 +98,30 @@ p{
 }
 
 .product-section {
-  padding: 35px 0;
-  min-height: 600px;
-  background: rgba(24, 204, 231, 0.16);
+  padding: 50px 0;
 }
 
 .product-section h2 {
   position: relative;
   z-index: 1;
-  font-size: 2.5em;
+  font-size: 2.2em;
   font-weight: 700;
   z-index: 1;
   font-family: "Jost", serif;
   color: var(--color-blue);
 }
 
-.container-section-products{
+.container-section-products {
   overflow: hidden;
 }
 
-/*Sellers section*/
-
-.container-products {
-  position: relative;
-  margin-bottom: 20px;
-  max-width: 1040px;
-  margin: auto;
-  z-index: 1;
+.container-section-products .img-content {
+  border-radius: 0px 130px 0px 0px;
+  width: 200px;
+  height: 270px;
 }
+
+/*Sellers section*/
 
 .product {
   transform: scale(0.8);
@@ -206,37 +221,120 @@ p{
   padding-right: 20px;
 }
 
-.product-section:nth-of-type(2) .obj-dec{
-  top: 66px;
-    transform: rotate(164deg);
-    left: -100px;
+.product-section:nth-of-type(1) {
+  color: rgba(0, 0, 0, 0.52);
 }
 
-.product-section:nth-of-type(3) .obj-dec{
+.product-section:nth-of-type(1),
+.product-section:nth-of-type(3),
+.product-section:nth-of-type(5),
+.product-section:nth-of-type(7) {
+  background: rgba(24, 204, 231, 0.16);
+}
+
+.product-section:nth-of-type(1) .obj-dec {
+  top: 30px;
+}
+
+.product-section:nth-of-type(1) .obj-dec-2 {
+  bottom: 50px;
+  right: 0;
+}
+
+.product-section:nth-of-type(2) .obj-dec {
+  top: 8px;
+  transform: rotate(164deg);
+  left: -100px;
+}
+
+.product-section:nth-of-type(2) .obj-dec-2 {
+  right: 0;
+  bottom: 150px;
+}
+
+.product-section:nth-of-type(3) .obj-dec {
   top: -150px;
   right: 0;
-
 }
 
-.product-section:nth-of-type(4) .obj-dec{
+.product-section:nth-of-type(3) .obj-dec-2 {
   top: 150px;
-  left: -184px;
-  transform: scaleX(-1) rotate(325deg);
+  left: 0;
 }
 
+.product-section:nth-of-type(4) .obj-dec {
+  top: 68px;
+  right: -5px;
+}
 
-.product-section:nth-of-type(5) .obj-dec{
+.product-section:nth-of-type(4) .obj-dec-2 {
+  bottom: 40px;
+}
+
+.product-section:nth-of-type(5) .obj-dec {
   top: 10px;
   right: 0;
 }
 
-.product-section:nth-of-type(6) .obj-dec{
+.product-section:nth-of-type(6) .obj-dec {
   top: 140px;
-  right: -210px;
+  left: 0;
+}
+
+.product-section:nth-of-type(6) .obj-dec-2 {
+  right: 0;
+  bottom: 50px;
+}
+
+.product-section:nth-of-type(7) .obj-dec {
+  right: 0;
+}
+
+.button-link {
+  position: relative;
+  display: flex;
+  margin: 0 auto;
+  font-size: 1.5em;
+  height: 46px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 60px;
+  background: var(--color-orange);
+  color: white;
+  width: 65%;
+  min-width: 195px;
+  margin-top: 50px;
+  max-width: 277px;
+  font-size: 1.5em;
+  text-decoration: none;
+  font-weight: 300;
+  max-width: 250px;
+  transition: background 0.3s ease;
+  z-index: 1;
+}
+
+.button-link::after {
+  content: "";
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  right: 0;
+  bottom: 0;
+  width: 105%;
+  height: 120%;
+  border-radius: 60px;
+  border: 1px solid var(--color-orange);
+  background: rgba(196, 196, 196, 0);
+}
+
+.button-link:hover {
+  color: white;
+  text-decoration: none;
+  background: #cf4c2b;
 }
 
 /*Footer*/
-.footer::after{
+.footer::after {
   content: "";
   position: absolute;
   width: 100%;
@@ -249,8 +347,17 @@ p{
   z-index: -1;
 }
 
-@media(min-width:992px){
-  .hero-shop{
+@media (min-width: 992px) {
+  .product-section {
+    padding: 70px 0;
+  }
+
+  .hero-shop {
     height: 500px;
+  }
+
+  .container-section-products .img-content {
+    width: 350px;
+    height: 400px;
   }
 }

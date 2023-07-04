@@ -14,8 +14,9 @@ button {
   cursor: pointer;
 }
 
-p{
-  line-height: 1.2;
+p {
+  font-size: 17px;
+  line-height: 1.4;
 }
 
 .hero-contact {
@@ -64,8 +65,9 @@ p{
   transition: all 0.3s ease;
 }
 
-.container-contact {
-  padding: 35px 0px;
+.container-contact,
+.container-find-us {
+  padding: 50px 0px;
 }
 
 .container-contact form {
@@ -149,8 +151,6 @@ p{
   background: rgba(24, 204, 231, 0.16);
 }
 
-
-
 .container-find-us .social-icon {
   background: var(--color-blue);
   margin: auto;
@@ -178,8 +178,7 @@ p{
   font-weight: 600;
 }
 
-.container-find-us{
-  font-size: 0.89em;
+.container-find-us {
   color: rgba(0, 0, 0, 0.52);
 }
 
@@ -194,20 +193,19 @@ p{
   height: 300px;
 }
 
-
-.container-find-us .obj-dec{
+.container-find-us .obj-dec {
   top: 40px;
   right: 0;
 }
 
-.container-find-us .obj-dec:last-of-type{
+.container-find-us .obj-dec:last-of-type {
   left: 0;
   top: 150px;
   z-index: -1;
 }
 
 /*Footer*/
-.footer::after{
+.footer::after {
   content: "";
   position: absolute;
   width: 100%;
@@ -220,25 +218,23 @@ p{
   z-index: -1;
 }
 
-
-
-@media(min-width:768px){
-  .container-map iframe{
+@media (min-width: 768px) {
+  .container-map iframe {
     height: 100%;
     border-radius: 0px;
   }
-  .container-contact form label{
+  .container-contact form label {
     font-size: 1.15em;
   }
 }
 
-@media(min-width:992px){
-  .hero-contact{
+@media (min-width: 992px) {
+  .hero-contact {
     height: 500px;
   }
 
-  .container-find-us{
-    font-size: 1.12em;
+  .container-contact,
+  .container-find-us {
+    padding: 70px 0;
   }
 }
-

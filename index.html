@@ -197,7 +197,7 @@
           src="./assets/icons/ellipse-white-2.png"
           alt="ellipse-white-2"
         />
-        <div class="container-content">
+        <div class="container position-relative">
           <h2 class="title">Best Sellers</h2>
 
           <div
@@ -388,7 +388,7 @@
             </div>
           </div>
 
-          <a href="./shop.html" class="button-link">Read More</a>
+          <a href="./shop.html" class="button-link">View More</a>
         </div>
       </section>
 
@@ -462,28 +462,37 @@
       <!-- Container customers -->
       <section class="container-customers">
         <img class="obj-dec" src="./assets/icons/adorno.png" alt="adorno" />
-        <div class="container-content">
-          <h2 class="title">What do our customers say</h2>
+        
+        
+        <div class="container position-relative">
           <img class="obj-dec-2" src="./assets/icons/bar-2.png" alt="bar-2" />
-
-          <div class="container-list owl-carousel carousel-customer">
-            <div
-              class="customer d-flex flex-column justify-content align-items-center"
+          <h2 class="title">What do our customers say</h2>
+            <div class="carousel-customer owl-carousel">
+              <div
+              class=" row customer d-flex flex-column flex-lg-row justify-content-center justify-content-lg-start align-items-lg-start align-items-center"
             >
+            <div class="col-lg-7 pr-lg-0">
               <h3 class="customer-name">Jhon Smith</h3>
-              <div class="video-container" id="video-1">
+              <p class="customer-desc">
+                The creams are fantastic and wonderful, they have made me feel
+                younger, and have given my skin incredible softness, 100%
+                recommended their products
+              </p>
+            </div>
+            <div class="col-lg-3">
+              <div class="video-container">
                 <div class="video">
                   <button
                     class="front-video player-preview"
-                    onclick="playVideo('video-1')"
+                    onclick="playVideo(this)"
                   >
-                    <img src="./assets/images/person_3.png" alt="person" />
+                    <img src="./assets/images/person_3.png" class="cover-image" alt="person" />
                     <div class="bg-button">
                       <img
                         src="./assets/icons/arrow-right.png"
                         class="icon player-preview"
                         alt="right"
-                      />-
+                      />
                     </div>
                   </button>
 
@@ -507,44 +516,20 @@
                   </button>
                 </div>
               </div>
-              <p class="customer-desc">
-                The creams are fantastic and wonderful, they have made me feel
-                younger, and have given my skin incredible softness, 100%
-                recommended their products
-              </p>
+            </div>          
             </div>
             <div
-              class="customer d-flex flex-column justify-content align-items-center"
+              class=" row customer d-flex flex-column flex-lg-row justify-content-center justify-content-lg-start align-items-lg-start align-items-center"
             >
+            <div class="col-lg-7 pr-lg-0">
               <h3 class="customer-name">Emily</h3>
-              <div class="img-container">
-                <img
-                  class="img-customer"
-                  src="./assets/images/person_3.png"
-                  alt="person_3"
-                />
-                <div class="container-buttons">
-                  <button onclick="leftPage()">
-                    <img src="./assets/icons/arrow-left.png" alt="arrow-left" />
-                  </button>
-                  <button onclick="rightPage()">
-                    <img
-                      src="./assets/icons/arrow-right.png"
-                      alt="arrow-right"
-                    />
-                  </button>
-                </div>
-              </div>
               <p class="customer-desc">
                 I have tried countless skin care products in the past, but this
                 cream truly stands out. It's lightweight, non-greasy, and leaves
                 my skin feeling incredibly soft and hydrated.
               </p>
             </div>
-            <div
-              class="customer d-flex flex-column justify-content align-items-center"
-            >
-              <h3 class="customer-name">Samantha</h3>
+            <div class="col-lg-3 p-0">
               <div class="img-container">
                 <img
                   class="img-customer"
@@ -563,13 +548,43 @@
                   </button>
                 </div>
               </div>
+            </div>          
+            </div>
+            <div
+              class=" row customer d-flex flex-column flex-lg-row justify-content-center justify-content-lg-start align-items-lg-start align-items-center"
+            >
+            <div class="col-lg-7 pr-lg-0">
+              <h3 class="customer-name">Samantha</h3>
               <p class="customer-desc">
                 I cannot recommend this skin care cream enough! It has done
                 wonders for my skin, reducing the appearance of fine lines and
                 improving its overall texture.
               </p>
             </div>
-          </div>
+            <div class="col-lg-3 p-0">
+              <div class="img-container">
+                <img
+                  class="img-customer"
+                  src="./assets/images/person_3.png"
+                  alt="person_3"
+                />
+                <div class="container-buttons">
+                  <button onclick="leftPage()">
+                    <img src="./assets/icons/arrow-left.png" alt="arrow-left" />
+                  </button>
+                  <button onclick="rightPage()">
+                    <img
+                      src="./assets/icons/arrow-right.png"
+                      alt="arrow-right"
+                    />
+                  </button>
+                </div>
+              </div>
+            </div>          
+            </div>
+            </div>
+            
+            
           <a
             class="customer-link button-link"
             target="_blank"
@@ -589,7 +604,7 @@
           src="./assets/icons/adorno-6.png"
           alt="adorno-6"
         />
-        <div class="container">
+        <div class="container position-relative">
           <h2 class="title text-lg-left text-center m-auto">
             Do you want to receive notifications of our products?
           </h2>
@@ -604,7 +619,7 @@
       <!-- Footer -->
       <footer class="footer">
         <div
-          class="container-footer d-flex flex-column justify-content-center align-items-center"
+          class="container-footer d-flex flex-column justify-content-center align-items-center container"
         >
           <div
             class="links company-info mt-2 mt-lg-0 d-flex flex-column justify-content-between align-items-center"
@@ -647,7 +662,7 @@
             <ul>
               <li>
                 <a
-                  href="https://www.google.com/maps/place/5191+Eastside+Hwy,+Stevensville,+MT+59870/@46.5765327,-114.0596878,17z/data=!3m1!4b1!4m6!3m5!1s0x535e9d7ef9f69d0d:0xcd730b6742b60b98!8m2!3d46.576529!4d-114.0571129!16s%2Fg%2F11cs73n6tc?entry=ttu"
+                  href="https://www.google.com/maps/"
                   rel="noopener noreferrer"
                   target="_blank"
                   ><img src="./assets/icons/map.png" alt="map" /><span
@@ -680,7 +695,7 @@
             </ul>
           </div>
         </div>
-        <div class="bottom-footer">
+        <div class="bottom-footer p-2 p-lg-4">
           <div
             class="container d-flex flex-column flex-lg-row justify-content-lg-between justify-content-center align-items-center text-center"
           >
