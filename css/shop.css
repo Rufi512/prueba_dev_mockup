@@ -18,6 +18,10 @@ h3 {
   margin: 0;
 }
 
+p{
+  line-height: 1.2;
+}
+
 .title {
   color: var(--color-blue);
   font-size: 2.8em;
@@ -34,7 +38,7 @@ h3 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 500px;
+  height: 380px;
   background-image: url("../assets/images/shop.jpg");
   background-size: cover;
   background-position: center;
@@ -75,17 +79,23 @@ h3 {
 }
 
 .product-section {
-  padding: 30px 0;
+  padding: 35px 0;
   min-height: 600px;
   background: rgba(24, 204, 231, 0.16);
 }
 
 .product-section h2 {
+  position: relative;
+  z-index: 1;
   font-size: 2.5em;
   font-weight: 700;
   z-index: 1;
   font-family: "Jost", serif;
   color: var(--color-blue);
+}
+
+.container-section-products{
+  overflow: hidden;
 }
 
 /*Sellers section*/
@@ -197,8 +207,9 @@ h3 {
 }
 
 .product-section:nth-of-type(2) .obj-dec{
-  top:300px;
-  left:0;
+  top: 66px;
+    transform: rotate(164deg);
+    left: -100px;
 }
 
 .product-section:nth-of-type(3) .obj-dec{
@@ -222,4 +233,24 @@ h3 {
 .product-section:nth-of-type(6) .obj-dec{
   top: 140px;
   right: -210px;
+}
+
+/*Footer*/
+.footer::after{
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #daf7fb;
+  z-index: -1;
+}
+
+@media(min-width:992px){
+  .hero-shop{
+    height: 500px;
+  }
 }

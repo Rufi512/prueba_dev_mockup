@@ -29,7 +29,7 @@ button {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 500px;
+  height: 380px;
   background-image: url("../assets/images/about-us.jpg");
   background-size: cover;
   background-position: top;
@@ -74,30 +74,33 @@ button {
 }
 
 /*Content*/
-
 .about-us {
-  padding: 80px 0;
-  min-height: 600px;
+  padding: 35px 0;
+  overflow: hidden;
 }
 
 .about-us .content {
-  max-width: 752px;
-  padding: 0 20px;
-  margin: 0 auto;
-  padding-top: 30px;
   overflow: hidden;
+  padding-bottom: 5px;
 }
 
 .about-us .content h2 {
   text-align: center;
-  font-size: 3em;
+  font-size: 2.2em;
   z-index: 1;
   font-family: "Jost", serif;
   color: var(--color-blue);
 }
 
-.about-us .content p {
+.about-us .content p, .text-card{
   margin: 30px 0;
+  color: rgba(0, 0, 0, 0.52);
+  font-size: 0.89em;
+}
+
+.securities ul li{
+  color: rgba(0, 0, 0, 0.52);
+  font-size: 0.89em;
 }
 
 .about-us .content .container-images {
@@ -106,10 +109,6 @@ button {
   justify-content: center;
   margin: 0 auto;
   margin-top: 40px;
-}
-
-.about-us .content .container-images .img {
-  border-radius: 30px 30px 30px 30px;
 }
 
 .about-us .content .container-images .img {
@@ -126,11 +125,12 @@ button {
   height: 270px;
   object-fit: cover;
   max-width: 500px;
+  border-radius: 0px 100px 0px 0px;
 }
 
 .securities {
   background: rgba(24, 204, 231, 0.16);
-  padding: 30px 0;
+  padding: 35px 0;
   overflow: hidden;
 }
 
@@ -237,7 +237,7 @@ button {
 }
 
 .container-reviews {
-  padding-top: 30px;
+  padding: 35px 0;
 }
 
 .container-reviews .subtitle{
@@ -263,21 +263,45 @@ button {
   left: 0;
 }
 
+@media(min-width:992px){
+  .hero-about{
+    height: 500px;
+  }
+}
+
 @media only screen and (max-width: 992px) and (min-width: 768px) {
   .securities .row .col-md-4:last-of-type .card {
-    height: 287px;
+    height: 298px;
+  }
+}
+
+@media(min-width:992px){
+  .about-us .content .container-images .img,
+  .about-us .content img {
+    width: 350px;
+    opacity: 1;
+    height: 400px;
+  }
+
+  .about-us .content .container-images {
+    margin-top: -15px;
+    max-width: 420px;
+    display: flex;
+    align-items: center;
+  }
+
+  .about-us .content h2 {
+    text-align: left;
+  }
+
+  .about-us .content p, .text-card, .securities ul li {
+    font-size: 1.12em;
   }
 }
 
 @media (min-width: 1024px) {
   .hero-about h1 {
     font-size: 3em;
-  }
-  .about-us .content {
-    display: grid;
-    grid-template-columns: 0.9fr 1fr;
-    grid-template-areas: "container-images about-content";
-    max-width: 1280px;
   }
 
   .customers-cards {
@@ -294,24 +318,9 @@ button {
     grid-area: about-content;
   }
 
-  .about-us .content .container-images {
-    margin-top: -15px;
-    max-width: 420px;
-    display: flex;
-    align-items: center;
+  .securities ul li{
+    margin: 12px 0;
   }
-
-  .about-us .content .container-images .img,
-  .about-us .content img {
-    width: 350px;
-    opacity: 1;
-    height: 400px;
-  }
-
-  .about-us .content h2 {
-    text-align: left;
-  }
-
   .about-us .content .button-link {
     margin-right: 0 !important;
   }

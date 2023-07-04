@@ -24,14 +24,15 @@
     ></script>
     <link rel="stylesheet" href="./css/header.css" />
     <link rel="stylesheet" href="./css/style.css" />
-    <link rel="stylesheet" href="./css/customers-reviews.css">
+    <link rel="stylesheet" href="./css/customers-reviews.css" />
     <link rel="stylesheet" href="./css/footer.css" />
+    <link rel="stylesheet" href="./css/float-buttons.css" />
   </head>
   <body>
     <main>
       <header class="header">
-         <!--Social links Top Header-->
-         <nav class="top-header nav-social ">
+        <!--Social links Top Header-->
+        <nav class="top-header nav-social">
           <ul class="social-links nav d-flex justify-content-between">
             <div class="d-flex social">
               <li class="nav-item">
@@ -40,7 +41,12 @@
                 /></a>
               </li>
               <li class="nav-item">
-                <a href="https://www.google.com/maps/place/5191+Eastside+Hwy,+Stevensville,+MT+59870/@46.5765327,-114.0596878,17z/data=!3m1!4b1!4m6!3m5!1s0x535e9d7ef9f69d0d:0xcd730b6742b60b98!8m2!3d46.576529!4d-114.0571129!16s%2Fg%2F11cs73n6tc?entry=ttu" rel="noopener noreferrer" target="_blank"><img src="./assets/icons/map.png" alt="map" /></a>
+                <a
+                  href="https://www.google.com/maps/place/5191+Eastside+Hwy,+Stevensville,+MT+59870/@46.5765327,-114.0596878,17z/data=!3m1!4b1!4m6!3m5!1s0x535e9d7ef9f69d0d:0xcd730b6742b60b98!8m2!3d46.576529!4d-114.0571129!16s%2Fg%2F11cs73n6tc?entry=ttu"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                  ><img src="./assets/icons/map.png" alt="map"
+                /></a>
               </li>
               <li class="nav-item">
                 <a href="tel:+18449345267"
@@ -60,7 +66,6 @@
               <img src="./assets/images/LOGO.png" alt="Logo" />
               <h1>Skin Care</h1>
             </a>
-            
           </div>
           <!--Navigation-->
           <input type="checkbox" id="show-header" hidden />
@@ -69,8 +74,9 @@
               ><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
                 <path
                   d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"
-                /></svg>
-              </label>
+                />
+              </svg>
+            </label>
             <a href="./index.html" class="logo-link">
               <img src="./assets/images/logo-blanco.png" alt="logo" />
             </a>
@@ -93,9 +99,10 @@
               ><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
                 <path
                   d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"
-                /></svg>
-              </label>
-              
+                />
+              </svg>
+            </label>
+
             <ul class="social-links nav d-flex justify-content-between">
               <div class="social">
                 <li class="nav-item">
@@ -104,7 +111,12 @@
                   /></a>
                 </li>
                 <li class="nav-item">
-                  <a href="https://www.google.com/maps/place/5191+Eastside+Hwy,+Stevensville,+MT+59870/@46.5765327,-114.0596878,17z/data=!3m1!4b1!4m6!3m5!1s0x535e9d7ef9f69d0d:0xcd730b6742b60b98!8m2!3d46.576529!4d-114.0571129!16s%2Fg%2F11cs73n6tc?entry=ttu" rel="noopener noreferrer" target="_blank"><img src="./assets/icons/map.png" alt="map" /></a>
+                  <a
+                    href="https://www.google.com/maps/place/5191+Eastside+Hwy,+Stevensville,+MT+59870/@46.5765327,-114.0596878,17z/data=!3m1!4b1!4m6!3m5!1s0x535e9d7ef9f69d0d:0xcd730b6742b60b98!8m2!3d46.576529!4d-114.0571129!16s%2Fg%2F11cs73n6tc?entry=ttu"
+                    rel="noopener noreferrer"
+                    target="_blank"
+                    ><img src="./assets/icons/map.png" alt="map"
+                  /></a>
                 </li>
                 <li class="nav-item">
                   <a href="tel:+18449345267"
@@ -148,13 +160,17 @@
           alt="adorno-2"
         />
 
-        <div class="container-content">
-          <h2 class="title">Become The Best Version Of Yourself</h2>
-          <a
-            class="d-flex justify-content-center button-link"
-            href="./shop.html"
-            >Get Started</a
-          >
+        <div class="container d-flex justify-content-center align-items-center">
+          <div class="row m-auto">
+            <div class="col-12">
+              <h2 class="title">Become The Best Version Of Yourself</h2>
+              <a
+                class="d-flex justify-content-center button-link"
+                href="./shop.html"
+                >Get Started</a
+              >
+            </div>
+          </div>
         </div>
       </section>
 
@@ -268,41 +284,50 @@
 
       <!-- About us-->
 
-      <section class="container-about-us col-12">
-        <div class="container-content container">
-          <img
-            class="logo-bg"
-            src="./assets/images/logo-background.png"
-            alt="logo-bg"
-          />
-          <div class="images-about-us">
-            <div class="image">
-              <img src="./assets/images/about-1.jpg" alt="about-1" />
+      <section class="container-about-us">
+        <div class="container">
+          <div class="row justify-content-between align-items-start">
+            <img
+              class="logo-bg"
+              src="./assets/images/logo-background.png"
+              alt="logo-bg"
+            />
+            <div class="images-about-us col-lg-4 d-lg-flex">
+              <div class="image">
+                <img src="./assets/images/about-1.jpg" alt="about-1" />
+              </div>
+              <div class="image">
+                <img src="./assets/images/about-3.jpg" alt="about-3" />
+              </div>
             </div>
-            <div class="image">
-              <img src="./assets/images/about-3.jpg" alt="about-3" />
+            <div class="content col-lg-7 pl-lg-4 p-3 m-auto">
+              <h2 class="title bg-circle">About us</h2>
+              <p class="text-center text-lg-left">
+                We are a company that transforms creams and masks based on
+                natural products for the care and beauty of our clients' skin.
+                This product is available for men and women, offering the best
+                quality, generating confidence in our clients through innovative
+                methods.
+                <br />
+                We have a multidisciplinary work team dedicated to developing
+                the best natural products to meet the needs of our clients in
+                terms of facial care and beauty.<br />
+                <br />
+                Thanks to our commitment and knowledge, we are uniquely
+                positioned to be the most trusted business partner. We exceed
+                the expectations of our customers and shareholders by setting
+                the standard in providing the most reliable and innovative
+                product identification solutions anywhere in the world.
+              </p>
+              <img
+                class="image-content d-lg-none"
+                src="./assets/images/about-3.jpg"
+                alt="about-3"
+              />
+              <a href="./about_us.html" class="button-link btn-blue"
+                >Read more</a
+              >
             </div>
-          </div>
-          <div class="content">
-            <h2 class="title bg-circle">About us</h2>
-            <p>
-              We are a company that transforms creams and masks based on natural
-              products for the care and beauty of our clients' skin. This
-              product is available for men and women, offering the best quality,
-              generating confidence in our clients through innovative methods.
-              <br />
-              We have a multidisciplinary work team dedicated to developing the
-              best natural products to meet the needs of our clients in terms of
-              facial care and beauty.<br />
-              <br />
-              Thanks to our commitment and knowledge, we are uniquely positioned
-              to be the most trusted business partner. We exceed the
-              expectations of our customers and shareholders by setting the
-              standard in providing the most reliable and innovative product
-              identification solutions anywhere in the world.
-            </p>
-            <img class="image-content" src="./assets/images/about-3.jpg" alt="about-3" />
-            <a href="./about_us.html" class="button-link btn-blue">Read more</a>
           </div>
         </div>
       </section>
@@ -317,38 +342,50 @@
           alt="adorno-4"
         />
         <img class="obj-dec-3" src="./assets/icons/bar.png" alt="bar" />
-        <div class="container-content">
+        <div class="container">
           <h2 class="title">Shop by Category</h2>
-          <div class="container-images">
-            <a href="./shop.html#Scrubs" class="image text-left img-1">
-              <img src="./assets/images/categoria-1.jpg" alt="categoria-1" />
-              <h3>Scrubs</h3>
-            </a>
+          <div class="row justify-content-center align-items-center">
+            <div class="col-12 p-0 row flex-column flex-md-row">
+              <a href="./shop.html#Scrubs" class="image text-left img-1">
+                <img src="./assets/images/categoria-1.jpg" alt="categoria-1" />
+                <h3>Scrubs</h3>
+              </a>
 
-            <a href="./shop.html#Stain-resistant" class="image text-center img-2">
-              <img src="./assets/images/categoria-2.jpg" alt="categoria-2" />
-              <h3>Stain resistant</h3>
-            </a>
+              <a
+                href="./shop.html#Stain-resistant"
+                class="image text-center img-2"
+              >
+                <img src="./assets/images/categoria-2.jpg" alt="categoria-2" />
+                <h3>Stain resistant</h3>
+              </a>
 
-            <a href="./shop.html#Mattifying" class="image text-right img-3">
-              <img src="./assets/images/categoria-3.jpg" alt="categoria-3" />
-              <h3>Mattifying</h3>
-            </a>
+              <a href="./shop.html#Mattifying" class="image text-right img-3">
+                <img src="./assets/images/categoria-3.jpg" alt="categoria-3" />
+                <h3>Mattifying</h3>
+              </a>
+            </div>
+            <div class="col-12 p-0 row flex-column flex-md-row">
+              <a
+                href="./shop.html#Moisturizers"
+                class="image text-left img-revert-left img-4"
+              >
+                <img src="./assets/images/categoria-4.jpg" alt="categoria-4" />
+                <h3>Moisturizers</h3>
+              </a>
 
-            <a href="./shop.html#Moisturizers" class="image text-left img-revert-left img-4">
-              <img src="./assets/images/categoria-4.jpg" alt="categoria-4" />
-              <h3>Moisturizers</h3>
-            </a>
+              <a href="./shop.html#Tonics" class="image text-center img-5">
+                <img src="./assets/images/categoria-5.jpg" alt="categoria-5" />
+                <h3>Tonics</h3>
+              </a>
 
-            <a href="./shop.html#Tonics" class="image text-center img-5">
-              <img src="./assets/images/categoria-5.jpg" alt="categoria-5" />
-              <h3>Tonics</h3>
-            </a>
-
-            <a href="./shop.html#Anti-wrinkle" class="image text-right img-revert-right img-6">
-              <img src="./assets/images/categoria-6.jpg" alt="categoria-6" />
-              <h3>Anti wrinkle</h3>
-            </a>
+              <a
+                href="./shop.html#Anti-wrinkle"
+                class="image text-right img-revert-right img-6"
+              >
+                <img src="./assets/images/categoria-6.jpg" alt="categoria-6" />
+                <h3>Anti wrinkle</h3>
+              </a>
+            </div>
           </div>
 
           <a href="./shop.html" class="button-link">Read More</a>
@@ -363,56 +400,60 @@
           src="./assets/icons/ellipse-2.png"
           alt="ellipse-2"
         />
-        <div class="container-content">
-          <div class="image">
-            <img src="./assets/images/about-3.jpg" alt="about-3" />
-            <h3>The best products for you</h3>
-            <img src="./assets/icons/rectangle.png" alt="rectangle" />
-          </div>
-          <div class="content p-0">
-            <h2 class="title bg-circle">Benefits</h2>
-            <p>
-              The creams will help you maintain the moisture of your skin, and
-              will reinforce its barrier function. And just as you apply a
-              moisturizer to your face, you should apply it to your body, and
-              not just in summer.<br /><br />
-              The best time to apply them is after a shower. And even if your
-              gel is moisturizing, you should also use a lotion or body milk.
-              Take the equivalent of a walnut for each part of the body
-              (abdomen, arms, thighs, calves...) and take the opportunity to
-              give yourself a circular massage from bottom to top.
-            </p>
-          </div>
-          <div class="container-list d-flex flex-wrap justify-content-around">
-            <div
-              class="benefits d-flex flex-column align-items-center justify-content-center"
-            >
-              <div
-                class="icon d-flex flex-column align-items-center justify-content-center"
-              >
-                <img src="./assets/icons/icon-3.png" alt="benefits-1" />
-              </div>
-              <h3 class="mt-2">Gool Deal</h3>
+        <div class="container">
+          <div class="row justify-content-between">
+            <div class="col-lg-4 d-none d-lg-flex image p-0">
+              <img src="./assets/images/about-3.jpg" alt="about-3" />
+              <h3>The best products for you</h3>
+              <img src="./assets/icons/rectangle.png" alt="rectangle" />
+            </div>
+            <div class="col-lg-4 content p-3 p-lg-0">
+              <h2 class="title bg-circle">Benefits</h2>
+              <p class="text-center text-lg-left pl-lg-2 pr-lg-0">
+                The creams will help you maintain the moisture of your skin, and
+                will reinforce its barrier function. And just as you apply a
+                moisturizer to your face, you should apply it to your body, and
+                not just in summer.<br /><br />
+                The best time to apply them is after a shower. And even if your
+                gel is moisturizing, you should also use a lotion or body milk.
+                Take the equivalent of a walnut for each part of the body
+                (abdomen, arms, thighs, calves...) and take the opportunity to
+                give yourself a circular massage from bottom to top.
+              </p>
             </div>
             <div
-              class="benefits d-flex flex-column align-items-center justify-content-center"
+              class="container-list d-flex flex-wrap flex-lg-column justify-content-around col-lg-3 p-0"
             >
               <div
-                class="icon d-flex flex-column align-items-center justify-content-center"
+                class="benefits d-flex flex-column flex-lg-row align-items-center justify-content-center"
               >
-                <img src="./assets/icons/icon-2.png" alt="benefits-2" />
+                <div
+                  class="icon d-flex flex-column align-items-center justify-content-center"
+                >
+                  <img src="./assets/icons/icon-3.png" alt="benefits-1" />
+                </div>
+                <h3 class="mt-2 ml-lg-3">Gool Deal</h3>
               </div>
-              <h3 class="mt-2">Support</h3>
-            </div>
-            <div
-              class="benefits d-flex flex-column align-items-center justify-content-center"
-            >
               <div
-                class="icon d-flex flex-column align-items-center justify-content-center"
+                class="benefits d-flex mt-3 mt-md-0 flex-column flex-lg-row align-items-center justify-content-center"
               >
-                <img src="./assets/icons/icon-1.png" alt="benefits-3" />
+                <div
+                  class="icon d-flex flex-column align-items-center justify-content-center"
+                >
+                  <img src="./assets/icons/icon-2.png" alt="benefits-2" />
+                </div>
+                <h3 class="mt-2 ml-lg-3">Support</h3>
               </div>
-              <h3 class="mt-2">Quality</h3>
+              <div
+                class="benefits d-flex mt-3 mt-md-0 flex-column flex-lg-row align-items-center justify-content-center"
+              >
+                <div
+                  class="icon d-flex flex-column align-items-center justify-content-center"
+                >
+                  <img src="./assets/icons/icon-1.png" alt="benefits-3" />
+                </div>
+                <h3 class="mt-2 ml-lg-3">Quality</h3>
+              </div>
             </div>
           </div>
         </div>
@@ -432,15 +473,28 @@
               <h3 class="customer-name">Jhon Smith</h3>
               <div class="video-container" id="video-1">
                 <div class="video">
-                  <button class="front-video player-preview" onclick="playVideo('video-1')">
-                    <img  src="./assets/images/person_3.png" alt="person">
+                  <button
+                    class="front-video player-preview"
+                    onclick="playVideo('video-1')"
+                  >
+                    <img src="./assets/images/person_3.png" alt="person" />
                     <div class="bg-button">
-                      <img src="./assets/icons/arrow-right.png" class="icon player-preview" alt="right">-
+                      <img
+                        src="./assets/icons/arrow-right.png"
+                        class="icon player-preview"
+                        alt="right"
+                      />-
                     </div>
                   </button>
-                  
-                <video id="video-review" class="video-player" src="./assets/videos/hero-video.mp4" class="video-review" controls></video>
-              </div>
+
+                  <video
+                    id="video-review"
+                    class="video-player"
+                    src="./assets/videos/hero-video.mp4"
+                    class="video-review"
+                    controls
+                  ></video>
+                </div>
                 <div class="container-buttons">
                   <button onclick="leftPage()">
                     <img src="./assets/icons/arrow-left.png" alt="arrow-left" />
@@ -516,7 +570,12 @@
               </p>
             </div>
           </div>
-          <a class="customer-link button-link" target="_blank" rel="noopener noreferrer" href="https://www.google.com/search?q=josesilvera+enterprises&oq=jose&aqs=chrome.0.69i59j69i57j69i59j69i61.1999j0j1&sourceid=chrome&ie=UTF-8#lrd=0x80c8c3c501357acd:0x8f81737d4cf0e844,1,,,," class="button-link"
+          <a
+            class="customer-link button-link"
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://www.google.com/search?q=josesilvera+enterprises&oq=jose&aqs=chrome.0.69i59j69i57j69i59j69i61.1999j0j1&sourceid=chrome&ie=UTF-8#lrd=0x80c8c3c501357acd:0x8f81737d4cf0e844,1,,,,"
+            class="button-link"
             >Read more</a
           >
         </div>
@@ -530,14 +589,14 @@
           src="./assets/icons/adorno-6.png"
           alt="adorno-6"
         />
-        <div class="container-content">
-          <h2 class="title">
+        <div class="container">
+          <h2 class="title text-lg-left text-center m-auto">
             Do you want to receive notifications of our products?
           </h2>
 
-          <form class="form d-flex flex-column align-items-center">
-            <input type="text" class="field mr-lg-3 mb-lg-3" />
-            <a href="#" class="button-link mt-lg-0">Read More</a>
+          <form class="form row m-auto">
+            <input type="text" class="field col-lg-7 pr-4" />
+            <a href="#" class="button-link col-lg-5 pl-3">Read More</a>
           </form>
         </div>
       </section>
@@ -630,17 +689,125 @@
               And Developed by
             </p>
             <a
-			href="https://striveenterprise.com/"
-			rel="noopener noreferrer"
-			target="_blank"
-			><img src="./assets/images/logo-js.png" alt="logo"/></a>
+              href="https://striveenterprise.com/"
+              rel="noopener noreferrer"
+              target="_blank"
+              ><img src="./assets/images/logo-js.png" alt="logo"
+            /></a>
           </div>
         </div>
       </footer>
+      <!--Info buttons float-->
+      <div
+        class="container-float-buttons d-flex flex-column"
+        id="float-buttons"
+      >
+        <div class="container pl-1 pr-1">
+          <ul
+            class="d-flex flex-column align-items-center justify-content-lg-between"
+          >
+            <li data-toggle="tooltip" data-placement="left" title="Facebook">
+              <a
+                class="social-icon"
+                href="https://www.facebook.com/"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                <img src="./assets/icons/facebook.png" alt="facebook" />
+              </a>
+            </li>
+            <li data-toggle="tooltip" data-placement="left" title="Instargram">
+              <a
+                class="social-icon"
+                href="https://www.instargram.com/"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                <img src="./assets/icons/instagram.png" alt="instagram" />
+              </a>
+            </li>
+            <li data-toggle="tooltip" data-placement="left" title="Linkedin">
+              <a
+                class="social-icon"
+                href="https://www.linkedin.com/"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                <img src="./assets/icons/linkedin.png" alt="linkedin" />
+              </a>
+            </li>
+            <li
+              data-toggle="tooltip"
+              data-placement="left"
+              title="5191 Eastside Hwy Stevensville, MT 59870"
+            >
+              <a
+                href="https://www.google.com/maps/place/5191+Eastside+Hwy,+Stevensville,+MT+59870,+USA/@46.576529,-114.0571129,17z/data=!3m1!4b1!4m6!3m5!1s0x535e9d7ef9f69d0d:0xcd730b6742b60b98!8m2!3d46.576529!4d-114.0571129!16s%2Fg%2F11cs73n6tc?entry=ttu"
+                rel="noopener noreferrer"
+                target="_blank"
+                ><img
+                  class="social-icon"
+                  src="./assets/icons/map.png"
+                  alt="map"
+              /></a>
+            </li>
+            <li
+              data-toggle="tooltip"
+              data-placement="left"
+              title="info@glamping.global"
+            >
+              <a href="mailto:info@glamping.global"
+                ><img
+                  class="social-icon"
+                  src="./assets/icons/mail.png"
+                  alt="mail"
+              /></a>
+            </li>
+            <li
+              data-toggle="tooltip"
+              data-placement="left"
+              title="+18449345267"
+            >
+              <a href="tel:+18449345267"
+                ><img
+                  class="social-icon"
+                  src="./assets/icons/phone.png"
+                  alt="phone"
+              /></a>
+            </li>
+          </ul>
+          <button
+            class="d-flex justify-content-center align-items-center shadow-lg"
+            id="open-floats"
+          >
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+              <!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+              <path
+                d="M256 80c0-17.7-14.3-32-32-32s-32 14.3-32 32V224H48c-17.7 0-32 14.3-32 32s14.3 32 32 32H192V432c0 17.7 14.3 32 32 32s32-14.3 32-32V288H400c17.7 0 32-14.3 32-32s-14.3-32-32-32H256V80z"
+              />
+            </svg>
+          </button>
+        </div>
+      </div>
     </main>
-    <script src="js/jquery-3.7.0.min.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js"
+      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js"
+      integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+      crossorigin="anonymous"
+    ></script>
     <script src="./js/owl.carousel.min.js"></script>
     <script src="./js/carousel-customer.js"></script>
     <script src="./js/script.js"></script>
+    <script src="./js/float-button.js"></script>
   </body>
 </html>

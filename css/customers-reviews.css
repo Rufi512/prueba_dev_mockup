@@ -48,9 +48,10 @@
   margin-top: 30px;
   color: rgba(0, 0, 0, 0.58);
   font-family: "Andada Pro", serif;
-  font-size: 1em;
+  font-size: 0.89em;
   text-align: center;
   padding: 0 12px;
+  line-height: 1.2;
 }
 
 .container-customers .container-buttons {
@@ -105,23 +106,23 @@
     margin: auto;
     margin-top: 30px;
     margin-bottom: 30px;
-    border-radius: 10px;
+    border-radius: 0px 130px 0px 0px;
 }
 
 .container-customers .customer .video-container .video{
   position: relative;
-  border-radius: 10px;
+  border-radius: 0px 130px 0px 0px;
 }
 
 .container-customers .customer .video-container video{
     width: 100%;
-    max-width: 260px;
-    height: 250px;
+    max-width: 267px;
+    height: 260px;
     object-fit: cover;
     background: white;
     border: 5px solid #fff;
     box-shadow: -5px 4px 4px 0px rgba(0, 0, 0, 0.25);
-    border-radius: 10px;
+    border-radius: 0px 130px 0px 0px;
     
 }
 
@@ -134,7 +135,8 @@
   bottom: 0;
   width: 100%;
   height: 100%;
-  border-radius: 10px;
+  object-fit: cover;
+  border-radius: 0px 130px 0px 0px;
 }
 
 .container-customers .customer .video-container .front-video{
@@ -149,7 +151,7 @@
   width: 100%;
   height: 100%;
   background-color: #0c0c0c54;
-  border-radius: 10px;
+  border-radius: 0px 130px 0px 0px;
   z-index: 3;
   transition: all 0.3s ease;
 }
@@ -164,8 +166,9 @@
   right: 0;
   left: 0;
   z-index: 1;
-  border-radius: 10px;
+  border-radius: 0px 130px 0px 0px;
   transition: all 0.3s ease;
+  color: transparent;
 }
 
 .container-customers .customer .video-container .front-video .bg-button img{
@@ -179,7 +182,7 @@
   /*container customer*/
   .carousel-customer {
     max-width: 750px;
-    margin: 0 auto;
+    margin: 20px auto;
   }
   .container-customers .container-content {
     max-width: 1100px;
@@ -225,10 +228,13 @@
 
   .container-customers .customer .video-container{
     margin: auto;
+    margin-top: -40px;
+    margin-left: 50px;
   }
 
   .container-customers .customer .video-container video{
-    max-width: 260px;
+    height: 323px;
+    max-width: 267px;
   }
 
   .container-customers .customer .customer-name {
@@ -253,8 +259,14 @@
   .container-customers .customer .customer-desc {
     grid-area: customer-desc;
     text-align: left;
-    font-size: 1.25em;
+    font-size: 1.15em;
     margin-top: 0px;
     padding: 0;
+  }
+}
+
+@media(min-width:768px){
+  .container-faq .img{
+    height: 380px;
   }
 }

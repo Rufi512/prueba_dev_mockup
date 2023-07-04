@@ -6,6 +6,8 @@ customers.owlCarousel({
     responsiveClass:true,
     autoWidth:true,
     center:true,
+    nav:false,
+    dots:false,
     responsive:{
         0:{
             items:1,
