@@ -83,6 +83,7 @@ button {
 /*Content*/
 .about-us {
   padding: 35px 0;
+  background: rgba(24, 204, 231, 0.16);;
   overflow: hidden;
 }
 
@@ -96,6 +97,7 @@ button {
   font-size: 2.2em;
   z-index: 1;
   font-family: "Jost", serif;
+  font-weight: 700;
   color: var(--color-blue);
 }
 
@@ -136,8 +138,9 @@ button {
   border-radius: 0px 100px 0px 0px;
 }
 
+
 .securities {
-  background: rgba(24, 204, 231, 0.16);
+  background: transparent;
   padding: 35px 0;
   overflow: hidden;
 }
@@ -220,6 +223,7 @@ button {
 
 .securities ul li {
   position: relative;
+  margin: 10px 0;
 }
 
 .securities ul li:after {
@@ -244,10 +248,6 @@ button {
   color: var(--color-blue);
 }
 
-.fa-star {
-  color: #f3ad56;
-}
-
 .container-reviews {
   padding: 35px 0;
 }
@@ -262,12 +262,13 @@ button {
 .about-us .obj-dec:first-of-type {
   top: -130px;
   transform: scaleX(-1);
-  z-index: -1;
+  z-index: 0;
 }
 
 .securities .obj-dec:first-of-type {
-  top: -340px;
-  right: 0;
+  top: -34px;
+    right: -91px;
+    transform: scale(0.8);
 }
 
 .securities .obj-dec:last-of-type {
@@ -309,10 +310,6 @@ button {
     line-height: 1.4;
   }
 
-  .securities .container .row div:nth-of-type(2) .card {
-    padding-bottom: 50px;
-  }
-
   .securities ul li {
     margin: 8px 0;
   }
@@ -333,9 +330,8 @@ button {
 }
 
 @media only screen and (max-width: 992px) and (min-width: 768px) {
-  .securities .row .col-md-4:nth-of-type(1) .card,
-  .securities .row .col-md-4:nth-of-type(3) .card {
-    height: 285px;
+  .securities .card {
+    height: 305px;
   }
 }
 
@@ -364,8 +360,7 @@ button {
 }
 
 @media (min-width: 1200px) {
-  .securities .row .col-md-4:nth-of-type(1) .card,
-  .securities .row .col-md-4:nth-of-type(3) .card {
-    height: 267px;
+  .securities .row .card {
+    height: 280px;
   }
 }
